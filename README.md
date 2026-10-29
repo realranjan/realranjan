@@ -1,127 +1,108 @@
-<!--
-SVJ PROFILE README
-Before publishing, replace YOUR_GITHUB_USERNAME, YOUR_LINKEDIN_USERNAME,
-and YOUR_EMAIL. Add real project links and tools in the marked sections.
--->
-
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0D12,55:141A18,100:101612&height=205&section=header&text=SVJ&fontSize=86&fontColor=D8FF4F&fontAlignY=40&animation=fadeIn&desc=DEVELOPER%20%2F%20BUILDER%20%2F%20ALWAYS%20CURIOUS&descAlignY=70&descSize=14&descColor=B4A2FF" alt="SVJ — developer, builder, always curious" />
+  <!-- 🌌 ANIMATED CUSTOM SVG HERO -->
+  <img src="./hero.svg" width="100%" alt="Hero Banner" />
 
-<br />
+  <br/>
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=950&color=D8FF4F&center=true&vCenter=true&width=760&height=60&lines=%24+whoami;SVJ+%E2%80%94+developer+%26+digital+maker;%24+echo+%22Ideas+into+interfaces%22;Ideas+into+interfaces" alt="Animated terminal: whoami, SVJ — developer and digital maker, ideas into interfaces" />
-</a>
+  <!-- ⌨️ GOOGLE FONT ANIMATED TYPING SVG -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&width=700&height=45&lines=Crafting+Immersive+Digital+Experiences;Obsessed+with+Motion+%26+Modern+UI;Full-Stack+Engineering+meets+Design+Systems;Turning+Complex+Problems+into+Minimal+Code" alt="Typing SVG" />
+  </a>
 
-<br />
+  <br/><br/>
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME"><img src="https://img.shields.io/badge/GitHub-0B0D12?style=for-the-badge&logo=github&logoColor=D8FF4F" alt="GitHub" /></a>
-<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=PROFILE+VIEWS&color=0B0D12&style=for-the-badge" alt="Profile views" />
-<a href="https://github.com/YOUR_GITHUB_USERNAME?tab=followers"><img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=FOLLOW&style=for-the-badge&color=0B0D12&labelColor=0B0D12&logo=github&logoColor=B4A2FF" alt="GitHub followers" /></a>
+  <!-- 🔗 MODERN PILL SOCIAL LINKS -->
+  <p align="center">
+    <a href="https://yourportfolio.com" target="_blank">
+      <img src="https://img.shields.io/badge/PORTFOLIO-07070C?style=for-the-badge&logo=vercel&logoColor=white&labelColor=11111D&color=6366F1" alt="Portfolio" />
+    </a>&nbsp;&nbsp;
+    <a href="https://linkedin.com/in/yourusername" target="_blank">
+      <img src="https://img.shields.io/badge/LINKEDIN-07070C?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=11111D&color=EC4899" alt="LinkedIn" />
+    </a>&nbsp;&nbsp;
+    <a href="https://twitter.com/yourusername" target="_blank">
+      <img src="https://img.shields.io/badge/TWITTER-07070C?style=for-the-badge&logo=x&logoColor=white&labelColor=11111D&color=06B6D4" alt="X" />
+    </a>&nbsp;&nbsp;
+    <a href="mailto:youremail@domain.com">
+      <img src="https://img.shields.io/badge/CONTACT_ME-07070C?style=for-the-badge&logo=gmail&logoColor=white&labelColor=11111D&color=10B981" alt="Email" />
+    </a>
+  </p>
+
+  <br/>
+
+  <!-- 🍱 BENTO GRID CUSTOM SVG -->
+  <img src="./cards.svg" width="100%" alt="Bento Cards" />
 
 </div>
 
-<br />
+<br/>
 
-<table>
+<!-- ⚡ TECH ARSENAL SECTION -->
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=24&duration=1&pause=9999999&color=F8FAFC&center=true&vCenter=true&repeat=false&width=400&height=40&lines=TECH+ARSENAL" alt="Tech Arsenal" />
+  <p align="center">
+    <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,threejs,tailwind,nodejs,python,go,graphql,postgres,docker,aws,figma,git&theme=dark&perline=8" alt="Tech Stack" />
+  </p>
+</div>
+
+<br/><br/>
+
+<!-- 🚀 FEATURED PROJECTS (GLASSMORPHIC MATRIX TABLE) -->
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=24&duration=1&pause=9999999&color=F8FAFC&center=true&vCenter=true&repeat=false&width=400&height=40&lines=SELECTED+WORKS" alt="Selected Works" />
+</div>
+
+<table align="center" width="100%">
   <tr>
-    <td>
-      <pre>┌─[ SVJ@github ]────────────────────────────┐
-│                                            │
-│  $ whoami                                  │
-│  SVJ — developer &amp; digital maker           │
-│                                            │
-│  $ echo "mission"                          │
-│  Turn curious ideas into useful things.    │
-│                                            │
-│  $ _                                       │
-└────────────────────────────────────────────┘</pre>
+    <td width="50%" valign="top">
+      <h3 align="left">✨ Nebula UI Engine</h3>
+      <p align="left">A zero-runtime, WebGL-powered component library featuring fluid physics and glassmorphic primitives for modern web apps.</p>
+      <p align="left">
+        <img src="https://img.shields.io/badge/React-11111D?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/Three.js-11111D?style=flat-square&logo=threedotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/TypeScript-11111D?style=flat-square&logo=typescript&logoColor=3178C6" />
+      </p>
+      <p align="left">
+        <a href="https://github.com/YOUR_GITHUB_USERNAME"><b>↗ View Repository</b></a> &nbsp;|&nbsp; <a href="https://your-demo-link.com"><b>⚡ Live Demo</b></a>
+      </p>
     </td>
-    <td>
-      <h3>Hey, I'm SVJ 👋</h3>
-      <p>I like building thoughtful digital experiences, exploring how things work, and sweating the details that make a project feel finished.</p>
-      <p>Here you'll find projects, experiments, and things I'm learning along the way.</p>
+    <td width="50%" valign="top">
+      <h3 align="left">🧠 Synapse AI Studio</h3>
+      <p align="left">Autonomous multi-agent workflow builder with real-time streaming node graphs, vector memory, and custom LLM routing.</p>
+      <p align="left">
+        <img src="https://img.shields.io/badge/Next.js-11111D?style=flat-square&logo=nextdotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/Python-11111D?style=flat-square&logo=python&logoColor=3776AB" />
+        <img src="https://img.shields.io/badge/Docker-11111D?style=flat-square&logo=docker&logoColor=2496ED" />
+      </p>
+      <p align="left">
+        <a href="https://github.com/YOUR_GITHUB_USERNAME"><b>↗ View Repository</b></a> &nbsp;|&nbsp; <a href="https://your-demo-link.com"><b>⚡ Live Demo</b></a>
+      </p>
     </td>
   </tr>
 </table>
 
-<br />
+<br/><br/>
 
-## `01 / WHAT I’M INTO`
-
-<table>
-  <tr>
-    <td width="33%"><b>✳ &nbsp;Build</b><br /><sub>Ideas shaped into useful, well-made digital experiences.</sub></td>
-    <td width="33%"><b>⌘ &nbsp;Explore</b><br /><sub>New tools, creative code, and better ways to solve problems.</sub></td>
-    <td width="33%"><b>↗ &nbsp;Improve</b><br /><sub>Keep learning, keep iterating, keep making the details count.</sub></td>
-  </tr>
-</table>
-
-## `02 / TOOLKIT`
-
-<!-- Add the languages, frameworks, and tools you actually use. Example:
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,python,git,github,vscode&theme=dark" alt="Your technology stack" />
-</p>
--->
-
-<p>
-  <img src="https://img.shields.io/badge/ADD_YOUR-TECH_STACK-D8FF4F?style=for-the-badge&labelColor=0B0D12" alt="Replace with your tech stack" />
-  <img src="https://img.shields.io/badge/ADD_YOUR-TOOLS-B4A2FF?style=for-the-badge&labelColor=0B0D12" alt="Replace with your tools" />
-</p>
-
-## `03 / SELECTED WORK`
-
-Add real case studies here, then pin those repositories on your GitHub profile:
-
-| PROJECT | WHAT IT DOES | LINK |
-| :-- | :-- | :--: |
-| **[Project name]** | One sentence on the idea, your contribution, and the result. | [View ↗](https://github.com/YOUR_GITHUB_USERNAME/REPO_ONE) |
-| **[Project name]** | One sentence on the idea, your contribution, and the result. | [View ↗](https://github.com/YOUR_GITHUB_USERNAME/REPO_TWO) |
-
-<p><a href="https://github.com/YOUR_GITHUB_USERNAME?tab=repositories">More repositories ↗</a></p>
-
-## `04 / EXPERIENCE`
-
-| WHEN | ROLE / PLACE | HIGHLIGHT |
-| :-- | :-- | :-- |
-| `YEAR — NOW` | **[Your current role]** · [Organization] | Add one concrete contribution or result. |
-| `YEAR — YEAR` | **[Previous role or education]** · [Organization] | Add one detail that gives this entry context. |
-
-## `05 / GITHUB ACTIVITY`
-
+<!-- 📊 IMMERSIVE TELEMETRY & GITHUB STATS -->
 <div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=24&duration=1&pause=9999999&color=F8FAFC&center=true&vCenter=true&repeat=false&width=400&height=40&lines=LIVE+TELEMETRY" alt="Telemetry" />
+  
+  <br/>
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=0B0D12&title_color=D8FF4F&text_color=C9D1D9&icon_color=B4A2FF&ring_color=D8FF4F" alt="SVJ's GitHub stats" />
-</a>
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=0B0D12&title_color=D8FF4F&text_color=C9D1D9" alt="SVJ's most used programming languages" />
-</a>
+  <!-- Streak & Stats Side-by-Side -->
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&bg_color=07070c&title_color=6366f1&text_color=94a3b8&icon_color=ec4899&border_color=1e293b&border_radius=16&hide_border=false" height="175" alt="GitHub Stats" />
+    <img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=dark&background=07070C&border=1E293B&border_radius=16&ring=EC4899&fire=6366F1&currStreakLabel=F8FAFC&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B" height="175" alt="GitHub Streak" />
+  </p>
 
-<br />
-
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
-  <img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&hide_border=true&background=0B0D12&ring=D8FF4F&fire=B4A2FF&currStreakLabel=D8FF4F&sideLabels=C9D1D9&dates=8B949E" alt="SVJ's GitHub contribution streak" />
-</a>
+  <!-- Animated Activity Graph -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&bg_color=07070c&color=94a3b8&line=6366f1&point=ec4899&area=true&area_color=6366f1&hide_border=false&border_color=1e293b&custom_title=Contribution%20Velocity" width="98%" alt="Activity Graph" />
 
 </div>
 
-## `06 / SAY HELLO`
+<br/>
 
+<!-- 🌊 ANIMATED LIQUID WAVE FOOTER -->
 <div align="center">
-
-<a href="https://github.com/YOUR_GITHUB_USERNAME"><img src="https://img.shields.io/badge/GITHUB-0B0D12?style=for-the-badge&logo=github&logoColor=D8FF4F" alt="GitHub" /></a>
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"><img src="https://img.shields.io/badge/LINKEDIN-0B0D12?style=for-the-badge&logo=linkedin&logoColor=B4A2FF" alt="LinkedIn" /></a>
-<a href="mailto:YOUR_EMAIL@example.com"><img src="https://img.shields.io/badge/EMAIL-0B0D12?style=for-the-badge&logo=gmail&logoColor=FF784C" alt="Email" /></a>
-
-<br /><br />
-
-<sub>“Stay curious. Make useful things. Leave the details better.”</sub>
-
-<br />
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:101612,100:0B0D12&height=100&section=footer" width="100%" alt="" />
-
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:ec4899,100:06b6d4&height=110&section=footer&animation=twinkling" width="100%" alt="Footer Wave"/>
 </div>
