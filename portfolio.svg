@@ -317,4 +317,261 @@
       <text x="570" y="746" text-anchor="middle" class="mono muted" font-size="8">SCHEDULER</text>
 
       <rect x="674" y="715" width="92" height="40" rx="6" fill="#141311" stroke="#00e5ff">
-        <animate attributeName="stroke" values="#2c2a25;#00e5ff;#2c2a25" dur="3.2s" rep
+        <animate attributeName="stroke" values="#2c2a25;#00e5ff;#2c2a25" dur="3.2s" repeatCount="indefinite" />
+      </rect>
+      <text x="720" y="733" text-anchor="middle" class="mono bone" font-size="9.5">ROOMIFY</text>
+      <text x="720" y="746" text-anchor="middle" class="mono cyan" font-size="8">STATE SYNC</text>
+
+      <rect x="824" y="715" width="92" height="40" rx="6" fill="#141311" stroke="#10b981" />
+      <text x="870" y="733" text-anchor="middle" class="mono emerald" font-size="9.5">HEYLUMO</text>
+      <text x="870" y="746" text-anchor="middle" class="mono muted" font-size="8">200 OK</text>
+
+      <!-- Live Equalizer Telemetry Footer -->
+      <text x="524" y="814" class="mono muted" font-size="9.5">TASK QUEUE LATENCY: 4.2ms</text>
+      <rect x="840" y="796" width="7" height="24" rx="1.5" fill="#ff3b00">
+        <animate attributeName="height" values="8;26;8" dur="1.0s" repeatCount="indefinite" />
+        <animate attributeName="y" values="814;796;814" dur="1.0s" repeatCount="indefinite" />
+      </rect>
+      <rect x="854" y="792" width="7" height="28" rx="1.5" fill="#ff3b00">
+        <animate attributeName="height" values="28;10;28" dur="0.85s" repeatCount="indefinite" />
+        <animate attributeName="y" values="792;810;792" dur="0.85s" repeatCount="indefinite" />
+      </rect>
+      <rect x="868" y="798" width="7" height="22" rx="1.5" fill="#00e5ff">
+        <animate attributeName="height" values="12;28;12" dur="1.2s" repeatCount="indefinite" />
+        <animate attributeName="y" values="808;792;808" dur="1.2s" repeatCount="indefinite" />
+      </rect>
+      <rect x="882" y="794" width="7" height="26" rx="1.5" fill="#10b981">
+        <animate attributeName="height" values="24;8;24" dur="0.95s" repeatCount="indefinite" />
+        <animate attributeName="y" values="796;812;796" dur="0.95s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Card 02 Info -->
+      <text x="504" y="882" class="serif vermilion" font-size="34">02</text>
+      <text x="544" y="874" class="mono stone" font-size="10" letter-spacing="1.2">/ FULL-STACK WEB &amp; TASK AUTOMATION</text>
+      <text x="504" y="916" class="sans bone" font-size="23" font-weight="700" letter-spacing="-0.6">Roomify, Heylumo &amp; Cron_Auto</text>
+      <text x="504" y="944" class="sans stone" font-size="13.5">
+        Full-stack TypeScript web platforms and automated cron job
+      </text>
+      <text x="504" y="964" class="sans stone" font-size="13.5">
+        orchestrators engineered for real-time collaboration and speed.
+      </text>
+      <text x="504" y="994" class="mono cyan" font-size="10">✦ 45+ AUTOMATED COMMITS &amp; ZERO-DOWNTIME DEPLOYS</text>
+
+      <!-- Pills -->
+      <rect x="504" y="1016" width="90" height="26" rx="4" class="pill" />
+      <text x="549" y="1033" text-anchor="middle" class="mono silver" font-size="10">TypeScript</text>
+      <rect x="602" y="1016" width="78" height="26" rx="4" class="pill" />
+      <text x="641" y="1033" text-anchor="middle" class="mono silver" font-size="10">Next.js</text>
+      <rect x="688" y="1016" width="76" height="26" rx="4" class="pill" />
+      <text x="726" y="1033" text-anchor="middle" class="mono silver" font-size="10">Node.js</text>
+      <rect x="772" y="1016" width="92" height="26" rx="4" class="pill" />
+      <text x="818" y="1033" text-anchor="middle" class="mono silver" font-size="10">Cron Engine</text>
+    </g>
+
+    <!-- ──────── COLUMN 3 (x: 960 -> 1440): FLIPKART NLP & ANALYTICS SUITES ──────── -->
+    <g>
+      <!-- Top Animated UI Mockup (432x210) -->
+      <rect x="984" y="632" width="432" height="210" rx="8" class="mockup-bg" />
+      <line x1="984" y1="662" x2="1416" y2="662" stroke="#1e1c18" />
+      <circle cx="1002" cy="647" r="4" fill="#ff3b00" />
+      <circle cx="1016" cy="647" r="4" fill="#f59e0b" />
+      <circle cx="1030" cy="647" r="4" fill="#10b981" />
+      <text x="1048" y="651" class="mono stone" font-size="9.5">flipkart-nlp-classifier — jupyter</text>
+      <text x="1400" y="651" text-anchor="end" class="mono vermilion" font-size="9">F1: 0.968</text>
+
+      <!-- Animated Multi-Wave Telemetry Oscilloscope -->
+      <path fill="none" stroke="#00e5ff" stroke-width="2.2">
+        <animate attributeName="d" dur="4.5s" repeatCount="indefinite"
+          values="M 1004,790 Q 1080,690 1160,760 T 1310,700 L 1396,685;
+                  M 1004,770 Q 1080,810 1160,700 T 1310,775 L 1396,675;
+                  M 1004,790 Q 1080,690 1160,760 T 1310,700 L 1396,685" />
+      </path>
+      <path fill="none" stroke="#ff3b00" stroke-width="1.6" stroke-dasharray="5 4">
+        <animate attributeName="d" dur="5.5s" repeatCount="indefinite"
+          values="M 1004,805 Q 1100,760 1190,715 T 1330,755 L 1396,720;
+                  M 1004,755 Q 1100,695 1190,785 T 1330,705 L 1396,745;
+                  M 1004,805 Q 1100,760 1190,715 T 1330,755 L 1396,720" />
+      </path>
+
+      <!-- Scanning Radar Line -->
+      <line y1="670" y2="825" stroke="#f4f1ea" stroke-width="1" stroke-dasharray="3 3">
+        <animate attributeName="x1" values="1020;1380;1020" dur="5.5s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="1020;1380;1020" dur="5.5s" repeatCount="indefinite" />
+      </line>
+      <circle cy="740" r="4.5" fill="#00e5ff">
+        <animate attributeName="cx" values="1020;1380;1020" dur="5.5s" repeatCount="indefinite" />
+      </circle>
+
+      <!-- Card 03 Info -->
+      <text x="984" y="882" class="serif vermilion" font-size="34">03</text>
+      <text x="1024" y="874" class="mono stone" font-size="10" letter-spacing="1.2">/ NLP CLASSIFICATION &amp; BI ANALYTICS</text>
+      <text x="984" y="916" class="sans bone" font-size="23" font-weight="700" letter-spacing="-0.6">Flipkart NLP &amp; BI Analytics Suites</text>
+      <text x="984" y="944" class="sans stone" font-size="13.5">
+        Automated e-commerce product taxonomy classification alongside
+      </text>
+      <text x="984" y="964" class="sans stone" font-size="13.5">
+        Hospitality, Sales, and T20 Cricket intelligence dashboards.
+      </text>
+      <text x="984" y="994" class="mono vermilion" font-size="10">✦ MULTI-CLASS TEXT EMBEDDINGS &amp; SQL DATA WAREHOUSING</text>
+
+      <!-- Pills -->
+      <rect x="984" y="1016" width="72" height="26" rx="4" class="pill" />
+      <text x="1020" y="1033" text-anchor="middle" class="mono silver" font-size="10">Python</text>
+      <rect x="1064" y="1016" width="84" height="26" rx="4" class="pill" />
+      <text x="1106" y="1033" text-anchor="middle" class="mono silver" font-size="10">NLP / ML</text>
+      <rect x="1156" y="1016" width="64" height="26" rx="4" class="pill" />
+      <text x="1188" y="1033" text-anchor="middle" class="mono silver" font-size="10">SQL</text>
+      <rect x="1228" y="1016" width="86" height="26" rx="4" class="pill" />
+      <text x="1271" y="1033" text-anchor="middle" class="mono silver" font-size="10">Power BI</text>
+    </g>
+
+
+    <!-- ==================== 05. WIDESCREEN 3-COLUMN EXPERIENCE, STACK & RADAR (y: 1080 -> 1520) ==================== -->
+    <line x1="0" y1="1080" x2="1440" y2="1080" class="border-line" />
+    <line x1="480" y1="1080" x2="480" y2="1520" class="border-line" />
+    <line x1="960" y1="1080" x2="960" y2="1520" class="border-line" />
+
+    <!-- ──────── COL 1 (x: 0 -> 480): EXPERIENCE & TENURE TIMELINE ──────── -->
+    <text x="28" y="1120" class="mono vermilion" font-size="11" letter-spacing="2">02 // EXPERIENCE &amp; TENURE</text>
+
+    <!-- Animated Timeline Spine -->
+    <line x1="40" y1="1150" x2="40" y2="1465" stroke="#282622" stroke-width="2" />
+    <circle cx="40" r="4" fill="#ff3b00">
+      <animate attributeName="cy" values="1160;1455;1160" dur="6s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Role 1 -->
+    <circle cx="40" cy="1160" r="5.5" fill="#ff3b00" />
+    <text x="64" y="1164" class="mono vermilion" font-size="10" letter-spacing="1">2025 — PRESENT · LEAD BUILDER</text>
+    <text x="64" y="1188" class="sans bone" font-size="17" font-weight="600">AI &amp; Full-Stack Systems Engineer</text>
+    <text x="64" y="1210" class="sans stone" font-size="12.5">Building clinical RAG assistants, distributed cron schedulers,</text>
+    <text x="64" y="1228" class="sans stone" font-size="12.5">and modern TypeScript/Next.js web applications.</text>
+
+    <!-- Role 2 -->
+    <circle cx="40" cy="1275" r="4.5" fill="#141311" stroke="#8c877e" stroke-width="1.5" />
+    <text x="64" y="1279" class="mono stone" font-size="10" letter-spacing="1">2024 — 2025 · DATA &amp; ML ENGINEERING</text>
+    <text x="64" y="1303" class="sans bone" font-size="17" font-weight="600">Machine Learning &amp; BI Developer</text>
+    <text x="64" y="1325" class="sans stone" font-size="12.5">Engineered Flipkart NLP product classifiers and end-to-end</text>
+    <text x="64" y="1343" class="sans stone" font-size="12.5">SQL / Power BI analytics suites for hospitality and sports.</text>
+
+    <!-- Role 3 -->
+    <circle cx="40" cy="1390" r="4.5" fill="#141311" stroke="#524f49" stroke-width="1.5" />
+    <text x="64" y="1394" class="mono stone" font-size="10" letter-spacing="1">OPEN SOURCE &amp; HACKATHON ORCHESTRATION</text>
+    <text x="64" y="1418" class="sans bone" font-size="17" font-weight="600">74+ Repositories &amp; 1,697+ Contributions</text>
+    <text x="64" y="1440" class="sans stone" font-size="12.5">Shipping high-velocity open-source tools, AI prototypes,</text>
+    <text x="64" y="1458" class="sans stone" font-size="12.5">and full-stack web templates recognized by the community.</text>
+
+
+    <!-- ──────── COL 2 (x: 480 -> 960): TECHNICAL SPECIFICATION MATRIX ──────── -->
+    <text x="504" y="1120" class="mono vermilion" font-size="11" letter-spacing="2">03 // TECHNICAL SPECIFICATION MATRIX</text>
+
+    <!-- Spec 1 -->
+    <rect x="504" y="1144" width="432" height="106" rx="8" class="card-bg" />
+    <text x="524" y="1170" class="mono bone" font-size="11" font-weight="600">01 // AI, RAG &amp; DATA SCIENCE</text>
+    <text x="916" y="1170" text-anchor="end" class="mono vermilion" font-size="10">96%</text>
+    <rect x="524" y="1182" width="392" height="4" rx="2" fill="#22201c" />
+    <rect x="524" y="1182" width="376" height="4" rx="2" fill="#ff3b00">
+      <animate attributeName="width" values="290;376;290" dur="5s" repeatCount="indefinite" />
+    </rect>
+    <text x="524" y="1210" class="sans stone" font-size="12.5">Python, RAG Pipelines, Vector Embeddings, LLM Orchestration,</text>
+    <text x="524" y="1230" class="sans stone" font-size="12.5">NLP Classification, Jupyter, Pandas, SQL, Power BI</text>
+
+    <!-- Spec 2 -->
+    <rect x="504" y="1264" width="432" height="106" rx="8" class="card-bg" />
+    <text x="524" y="1290" class="mono bone" font-size="11" font-weight="600">02 // FULL-STACK WEB &amp; INTERFACE CRAFT</text>
+    <text x="916" y="1290" text-anchor="end" class="mono cyan" font-size="10">94%</text>
+    <rect x="524" y="1302" width="392" height="4" rx="2" fill="#22201c" />
+    <rect x="524" y="1302" width="364" height="4" rx="2" fill="#00e5ff">
+      <animate attributeName="width" values="270;364;270" dur="4.5s" repeatCount="indefinite" />
+    </rect>
+    <text x="524" y="1330" class="sans stone" font-size="12.5">TypeScript, JavaScript, React, Next.js, Tailwind CSS, Node.js,</text>
+    <text x="524" y="1350" class="sans stone" font-size="12.5">Realtime State Sync, REST APIs, Interactive SVG Motion</text>
+
+    <!-- Spec 3 -->
+    <rect x="504" y="1384" width="432" height="106" rx="8" class="card-bg" />
+    <text x="524" y="1410" class="mono bone" font-size="11" font-weight="600">03 // AUTOMATION, CLOUD &amp; DEVOPS</text>
+    <text x="916" y="1410" text-anchor="end" class="mono emerald" font-size="10">92%</text>
+    <rect x="524" y="1422" width="392" height="4" rx="2" fill="#22201c" />
+    <rect x="524" y="1422" width="352" height="4" rx="2" fill="#10b981">
+      <animate attributeName="width" values="260;352;260" dur="5.5s" repeatCount="indefinite" />
+    </rect>
+    <text x="524" y="1450" class="sans stone" font-size="12.5">Git, GitHub Actions, Cron Orchestration, Docker, Linux, Vercel,</text>
+    <text x="524" y="1470" class="sans stone" font-size="12.5">Database Architecture, Automated Testing &amp; Deployment</text>
+
+
+    <!-- ──────── COL 3 (x: 960 -> 1440): LIVE MULTI-AXIS RADAR & MANIFESTO ──────── -->
+    <text x="984" y="1120" class="mono vermilion" font-size="11" letter-spacing="2">04 // SYSTEM TELEMETRY RADAR</text>
+
+    <rect x="984" y="1144" width="432" height="232" rx="8" class="mockup-bg" />
+    <!-- Radar Concentric Grid -->
+    <circle cx="1200" cy="1260" r="82" fill="none" stroke="#22201c" stroke-width="1" />
+    <circle cx="1200" cy="1260" r="54" fill="none" stroke="#22201c" stroke-width="1" stroke-dasharray="3 3" />
+    <circle cx="1200" cy="1260" r="26" fill="none" stroke="#22201c" stroke-width="1" />
+    <line x1="1100" y1="1260" x2="1300" y2="1260" stroke="#1a1916" />
+    <line x1="1200" y1="1168" x2="1200" y2="1352" stroke="#1a1916" />
+
+    <!-- Morphing Skill Polygon -->
+    <polygon fill="#ff3b00" fill-opacity="0.18" stroke="#ff3b00" stroke-width="1.8">
+      <animate attributeName="points" dur="6s" repeatCount="indefinite"
+        values="1200,1184 1272,1225 1260,1315 1200,1334 1132,1305 1138,1218;
+                1200,1192 1264,1232 1270,1305 1200,1326 1140,1312 1128,1225;
+                1200,1184 1272,1225 1260,1315 1200,1334 1132,1305 1138,1218" />
+    </polygon>
+
+    <!-- Rotating Radar Sweep Line -->
+    <line x1="1200" y1="1260" x2="1200" y2="1178" stroke="#00e5ff" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 1200 1260" to="360 1200 1260" dur="5s" repeatCount="indefinite" />
+    </line>
+    <circle cx="1200" cy="1260" r="4" fill="#f4f1ea" />
+
+    <!-- Radar Axis Labels -->
+    <text x="1200" y="1166" text-anchor="middle" class="mono bone" font-size="9">AI / RAG</text>
+    <text x="1312" y="1224" class="mono silver" font-size="9">NEXT.JS</text>
+    <text x="1312" y="1314" class="mono silver" font-size="9">PYTHON</text>
+    <text x="1200" y="1364" text-anchor="middle" class="mono silver" font-size="9">DATA / SQL</text>
+    <text x="1088" y="1314" text-anchor="end" class="mono silver" font-size="9">AUTOMATION</text>
+    <text x="1088" y="1224" text-anchor="end" class="mono silver" font-size="9">UI MOTION</text>
+
+    <!-- Manifesto Box (y: 1388 -> 1490) -->
+    <rect x="984" y="1388" width="432" height="102" rx="8" class="card-bg" />
+    <text x="1004" y="1414" class="mono vermilion" font-size="9.5" letter-spacing="1.5">ENGINEERING PHILOSOPHY</text>
+    <text x="1004" y="1444" class="serif bone" font-size="24">“Speed is a feature. Precision is law.”</text>
+    <text x="1004" y="1470" class="mono muted" font-size="9.5">ZERO BLOAT  ·  EVIDENCE-GROUNDED AI  ·  TACTILE WEB</text>
+
+
+    <!-- ==================== 06. PANORAMIC WIDESCREEN FOOTER (y: 1520 -> 1740) ==================== -->
+    <line x1="0" y1="1520" x2="1440" y2="1520" class="border-line" />
+    <rect x="0" y="1521" width="1440" height="219" fill="#0d0c0a" />
+
+    <text x="28" y="1564" class="mono vermilion" font-size="11" letter-spacing="2">05 // INITIATE DIALOGUE</text>
+    <text x="28" y="1624" class="sans bone" font-size="48" font-weight="700" letter-spacing="-1.8">Let’s build something</text>
+    <text x="524" y="1624" class="serif vermilion" font-size="56">extraordinary.</text>
+
+    <!-- Horizontal Contact Cards on Right Side of Footer -->
+    <rect x="780" y="1568" width="210" height="64" rx="8" class="card-bg" />
+    <text x="800" y="1592" class="mono muted" font-size="9.5">WEB PORTAL</text>
+    <text x="800" y="1614" class="mono bone" font-size="12">↗ freefirezilla.com</text>
+
+    <rect x="1004" y="1568" width="240" height="64" rx="8" class="card-bg" />
+    <text x="1024" y="1592" class="mono muted" font-size="9.5">LINKEDIN NETWORK</text>
+    <text x="1024" y="1614" class="mono bone" font-size="12">↗ in/ranjan-vernekar</text>
+
+    <!-- Rotating Seal on Far Right -->
+    <circle cx="1340" cy="1600" r="46" fill="none" stroke="#2c2a25" stroke-width="1" stroke-dasharray="4 4">
+      <animateTransform attributeName="transform" type="rotate" from="0 1340 1600" to="360 1340 1600" dur="20s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1340" cy="1600" r="30" fill="none" stroke="#ff3b00" stroke-width="1" opacity="0.5" />
+    <circle cx="1340" cy="1554" r="4" fill="#ff3b00">
+      <animateTransform attributeName="transform" type="rotate" from="0 1340 1600" to="360 1340 1600" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <text x="1340" y="1604" text-anchor="middle" class="mono bone" font-size="10" letter-spacing="1">2026</text>
+
+    <!-- Bottom Colophon Bar -->
+    <line x1="0" y1="1674" x2="1440" y2="1674" class="border-line" />
+    <text x="28" y="1708" class="mono muted" font-size="10.5" letter-spacing="1">DESIGNED &amp; ENGINEERED BY RANJAN VERNEKAR (@REALRANJAN)  ·  1440PX WIDESCREEN SMIL ARCHITECTURE</text>
+    <text x="1412" y="1708" text-anchor="end" class="mono stone" font-size="10.5" letter-spacing="1">HUBLI, INDIA // [UTC+5:30]</text>
+
+    <!-- Master Outer Border -->
+    <rect x="0.5" y="0.5" width="1439" height="1739" rx="14" fill="none" stroke="#282622" stroke-width="1" />
+  </g>
+</svg>
