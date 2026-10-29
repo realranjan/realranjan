@@ -1,577 +1,368 @@
-<svg viewBox="0 0 1440 1740" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1440 2240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, sans-serif; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; }
       .serif { font-family: 'Instrument Serif', 'Playfair Display', Georgia, 'Times New Roman', serif; font-style: italic; }
-      .mono { font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace; }
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; }
 
-      .bone { fill: #f4f1ea; }
-      .silver { fill: #d4d0c8; }
-      .stone { fill: #8c877e; }
-      .muted { fill: #524f49; }
+      /* Studio Palette */
+      .ink { fill: #0a0a0a; }
+      .paper { fill: #f2efe9; }
+      .stone { fill: #78746d; }
+      .muted-dark { fill: #52504c; }
       .vermilion { fill: #ff3b00; }
-      .cyan { fill: #00e5ff; }
-      .emerald { fill: #10b981; }
+      .lime { fill: #d4ff00; }
 
-      .grid-line { stroke: #1e1d1a; stroke-width: 1; }
-      .border-line { stroke: #282622; stroke-width: 1; }
-      .card-bg { fill: url(#card-grad); stroke: #282622; stroke-width: 1; }
-      .mockup-bg { fill: #070706; stroke: #22201c; stroke-width: 1; }
-      .pill { fill: #151412; stroke: #2c2a25; stroke-width: 1; }
+      .line-dark { stroke: #22211f; stroke-width: 1; }
+      .line-light { stroke: #d6d1c7; stroke-width: 1; }
     </style>
 
-    <!-- Master Gradients & Lighting -->
-    <linearGradient id="canvas-bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a09" />
-      <stop offset="50%" stop-color="#080807" />
-      <stop offset="100%" stop-color="#0a0a09" />
-    </linearGradient>
-
-    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#141311" />
-      <stop offset="100%" stop-color="#0c0c0a" />
-    </linearGradient>
-
-    <linearGradient id="top-shine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-    </linearGradient>
-
-    <radialGradient id="hero-aura" cx="80%" cy="15%" r="35%">
-      <stop offset="0%" stop-color="#ff3b00" stop-opacity="0.14" />
-      <stop offset="55%" stop-color="#ff3b00" stop-opacity="0.03" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
-    </radialGradient>
-
-    <pattern id="dot-matrix" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.8" fill="#22201c" />
-    </pattern>
-
-    <clipPath id="ticker-clip">
-      <rect x="0" y="510" width="1440" height="44" />
-    </clipPath>
     <clipPath id="master-clip">
-      <rect x="0" y="0" width="1440" height="1740" rx="14" />
+      <rect x="0" y="0" width="1440" height="2240" rx="12" />
+    </clipPath>
+    <clipPath id="marquee-clip">
+      <rect x="0" y="540" width="1440" height="52" />
     </clipPath>
   </defs>
 
   <g clip-path="url(#master-clip)">
-    <!-- ==================== MASTER 1440px WIDESCREEN CANVAS ==================== -->
-    <rect width="1440" height="1740" fill="url(#canvas-bg)" />
-    <rect width="1440" height="1740" fill="url(#dot-matrix)" opacity="0.75" />
-    <rect width="1440" height="600" fill="url(#hero-aura)" />
 
-    <!-- ==================== 01. WIDESCREEN TOP NAVIGATION BAR (y: 0 -> 54) ==================== -->
-    <rect x="0" y="0" width="1440" height="54" fill="#0d0d0b" />
-    <line x1="0" y1="54" x2="1440" y2="54" class="border-line" />
+    <!-- ================================================================================== -->
+    <!-- SECTION 01: MONUMENTAL STUDIO HERO (y: 0 -> 540 | Pitch Carbon #0A0A0A)            -->
+    <!-- ================================================================================== -->
+    <rect x="0" y="0" width="1440" height="540" fill="#0a0a0a" />
 
-    <!-- Brand Identity -->
-    <rect x="28" y="18" width="18" height="18" rx="4" fill="#ff3b00" />
-    <circle cx="37" cy="27" r="3" fill="#0a0a09" />
-    <text x="58" y="32" class="mono bone" font-size="13" font-weight="600" letter-spacing="1.5">RANJAN VERNEKAR</text>
-    <text x="210" y="32" class="mono muted" font-size="11.5">// REALRANJAN.OS — WIDESCREEN EDITION</text>
+    <!-- Top Studio Header Bar -->
+    <line x1="0" y1="64" x2="1440" y2="64" class="line-dark" />
+    <text x="40" y="38" class="sans paper" font-size="15" font-weight="700" letter-spacing="-0.5">RANJAN VERNEKAR®</text>
+    <text x="240" y="38" class="mono stone" font-size="11">(HUBLI, IN — 15.36° N)</text>
 
-    <!-- Center Navigation Index -->
-    <text x="590" y="32" class="mono stone" font-size="11" letter-spacing="1.5">01. SELECTED WORKS</text>
-    <text x="765" y="32" class="mono stone" font-size="11" letter-spacing="1.5">02. CAREER TENURE</text>
-    <text x="935" y="32" class="mono stone" font-size="11" letter-spacing="1.5">03. ARCHITECTURE</text>
-    <text x="1100" y="32" class="mono stone" font-size="11" letter-spacing="1.5">04. COLOPHON</text>
+    <text x="620" y="38" class="mono stone" font-size="11" letter-spacing="1">SERVICES (04)</text>
+    <text x="770" y="38" class="mono stone" font-size="11" letter-spacing="1">WORKS (03)</text>
+    <text x="900" y="38" class="mono stone" font-size="11" letter-spacing="1">PROCESS (04)</text>
 
-    <!-- Live Status Pill -->
-    <rect x="1252" y="14" width="160" height="26" rx="13" fill="#141311" stroke="#2c2a25" />
-    <circle cx="1268" cy="27" r="4" fill="#10b981">
-      <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite" />
+    <!-- Top Right Availability Pill -->
+    <rect x="1196" y="18" width="204" height="30" rx="15" fill="#161614" stroke="#2c2b28" />
+    <circle cx="1214" cy="33" r="4" fill="#d4ff00">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
     </circle>
-    <text x="1282" y="31" class="mono bone" font-size="10" letter-spacing="1">AVAILABLE FOR HIRE</text>
+    <text x="1228" y="37" class="mono paper" font-size="10.5" letter-spacing="1">AVAILABLE FOR WORK ↗</text>
 
+    <!-- Left Monumental Display Typography (Kigo Scale) -->
+    <text x="40" y="114" class="mono vermilion" font-size="11" letter-spacing="2">(00 — INDEPENDENT AI &amp; WEB ENGINEERING STUDIO)</text>
 
-    <!-- ==================== 02. PANORAMIC HERO SECTION (y: 54 -> 510) ==================== -->
-    <line x1="900" y1="54" x2="900" y2="510" class="border-line" />
+    <text x="36" y="216" class="sans paper" font-size="96" font-weight="700" letter-spacing="-4.5">DIGITAL SYSTEMS</text>
 
-    <!-- Left 900px Editorial Column -->
-    <rect x="28" y="80" width="330" height="24" rx="4" fill="#171412" stroke="#3a2016" />
-    <text x="40" y="96" class="mono vermilion" font-size="10" letter-spacing="1.5">AI SYSTEMS ENGINEER  ·  RAG  ·  FULL-STACK ARCHITECT</text>
+    <!-- Row 2 with Spinning Brutalist Asterisk -->
+    <text x="36" y="314" class="serif vermilion" font-size="104">&amp; intelligent</text>
+    <g transform="translate(595, 282)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite" />
+        <line x1="-26" y1="0" x2="26" y2="0" stroke="#f2efe9" stroke-width="5" />
+        <line x1="0" y1="-26" x2="0" y2="26" stroke="#f2efe9" stroke-width="5" />
+        <line x1="-18" y1="-18" x2="18" y2="18" stroke="#f2efe9" stroke-width="5" />
+        <line x1="-18" y1="18" x2="18" y2="-18" stroke="#f2efe9" stroke-width="5" />
+      </g>
+    </g>
 
-    <!-- Panoramic Display Headline -->
-    <text x="28" y="164" class="sans bone" font-size="58" font-weight="700" letter-spacing="-2.2">Engineering</text>
-    <text x="352" y="164" class="serif vermilion" font-size="68">intelligent</text>
-    <text x="615" y="164" class="sans bone" font-size="58" font-weight="700" letter-spacing="-2.2">models</text>
+    <text x="36" y="412" class="sans paper" font-size="96" font-weight="700" letter-spacing="-4.5">INTERFACES.</text>
 
-    <text x="28" y="232" class="sans bone" font-size="58" font-weight="700" letter-spacing="-2.2">&amp;</text>
-    <text x="82" y="232" class="serif bone" font-size="68">high-frequency</text>
-    <text x="458" y="232" class="sans silver" font-size="58" font-weight="700" letter-spacing="-2.2">web systems.</text>
-
-    <!-- Wide Bio Paragraph -->
-    <text x="28" y="282" class="sans stone" font-size="15">
-      I’m <tspan class="bone" font-weight="600">Ranjan Vernekar</tspan> — building evidence-grounded clinical RAG pipelines, NLP classification engines,
+    <!-- Bottom Hero Metadata Strip -->
+    <line x1="40" y1="456" x2="920" y2="456" class="line-dark" />
+    <text x="40" y="488" class="mono stone" font-size="11">(SCROLL FOR SERVICES ↓)</text>
+    <text x="290" y="488" class="sans paper" font-size="14" font-weight="500">
+      Bridging clinical-grade AI/RAG architecture with tactile, high-frequency web products.
     </text>
-    <text x="28" y="306" class="sans stone" font-size="15">
-      distributed cron schedulers, and tactile TypeScript/Next.js web applications from Hubli, India.
-    </text>
+    <text x="290" y="510" class="mono stone" font-size="11">1,697+ ANNUAL CONTRIBUTIONS  ·  74+ REPOSITORIES  ·  266★</text>
 
-    <!-- 4 Widescreen Glass-Lit Metric Cards (x: 28 -> 872, y: 342 -> 480) -->
-    <!-- Metric 1 -->
-    <rect x="28" y="342" width="200" height="136" rx="8" class="card-bg" />
-    <line x1="40" y1="342" x2="216" y2="342" stroke="url(#top-shine)" stroke-width="1.5" />
-    <text x="48" y="370" class="mono muted" font-size="10" letter-spacing="1">ANNUAL CONTRIBUTIONS</text>
-    <text x="48" y="424" class="serif bone" font-size="50">1,697<tspan class="vermilion" font-size="32">+</tspan></text>
-    <text x="48" y="456" class="mono emerald" font-size="10">● TOP 2% GITHUB VELOCITY</text>
-
-    <!-- Metric 2 -->
-    <rect x="242" y="342" width="200" height="136" rx="8" class="card-bg" />
-    <line x1="254" y1="342" x2="430" y2="342" stroke="url(#top-shine)" stroke-width="1.5" />
-    <text x="262" y="370" class="mono muted" font-size="10" letter-spacing="1">PRODUCTION REPOS</text>
-    <text x="262" y="424" class="serif bone" font-size="50">74<tspan class="vermilion" font-size="32">+</tspan></text>
-    <text x="262" y="456" class="mono stone" font-size="10">OPEN SOURCE &amp; AI MODELS</text>
-
-    <!-- Metric 3 -->
-    <rect x="456" y="342" width="200" height="136" rx="8" class="card-bg" />
-    <line x1="468" y1="342" x2="644" y2="342" stroke="url(#top-shine)" stroke-width="1.5" />
-    <text x="476" y="370" class="mono muted" font-size="10" letter-spacing="1">COMMUNITY IMPACT</text>
-    <text x="476" y="424" class="serif bone" font-size="50">266<tspan class="cyan" font-size="32">★</tspan></text>
-    <text x="476" y="456" class="mono stone" font-size="10">STARS ACROSS REPOSITORIES</text>
-
-    <!-- Metric 4 -->
-    <rect x="670" y="342" width="202" height="136" rx="8" class="card-bg" />
-    <line x1="682" y1="342" x2="860" y2="342" stroke="url(#top-shine)" stroke-width="1.5" />
-    <text x="690" y="370" class="mono muted" font-size="10" letter-spacing="1">CORE ARCHITECTURE</text>
-    <text x="690" y="424" class="serif vermilion" font-size="46">AI + Web</text>
-    <text x="690" y="456" class="mono bone" font-size="10">↗ FREEFIREZILLA.COM</text>
-
-
-    <!-- Right 540px Column: Widescreen 6-Node Neural & System Topology (x: 900 -> 1440) -->
-    <text x="924" y="84" class="mono stone" font-size="10" letter-spacing="1.5">FIG 01 // WIDESCREEN NEURAL &amp; RAG TOPOLOGY</text>
-    <text x="1412" y="84" text-anchor="end" class="mono emerald" font-size="10">60.0 FPS</text>
-
-    <rect x="924" y="100" width="488" height="378" rx="10" class="mockup-bg" />
-    <line x1="924" y1="289" x2="1412" y2="289" stroke="#151412" stroke-dasharray="4 4" />
-    <line x1="1168" y1="100" x2="1168" y2="478" stroke="#151412" stroke-dasharray="4 4" />
-
-    <!-- Concentric Rotating Telemetry Rings -->
-    <circle cx="1168" cy="289" r="136" fill="none" stroke="#24221e" stroke-width="1" stroke-dasharray="8 6">
-      <animateTransform attributeName="transform" type="rotate" from="0 1168 289" to="360 1168 289" dur="30s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="1168" cy="289" r="92" fill="none" stroke="#ff3b00" stroke-width="1" stroke-dasharray="20 30" opacity="0.55">
-      <animateTransform attributeName="transform" type="rotate" from="360 1168 289" to="0 1168 289" dur="16s" repeatCount="indefinite" />
-    </circle>
-
-    <!-- 6 Widescreen Neural Conduits -->
-    <path d="M 990,160 C 1070,160 1100,289 1168,289" fill="none" stroke="#2c2a25" stroke-width="1.5" />
-    <path d="M 1346,160 C 1266,160 1236,289 1168,289" fill="none" stroke="#2c2a25" stroke-width="1.5" />
-    <path d="M 970,289 L 1168,289" fill="none" stroke="#2c2a25" stroke-width="1.5" />
-    <path d="M 1366,289 L 1168,289" fill="none" stroke="#2c2a25" stroke-width="1.5" />
-    <path d="M 1168,289 C 1100,289 1070,418 990,418" fill="none" stroke="#2c2a25" stroke-width="1.5" />
-    <path d="M 1168,289 C 1236,289 1266,418 1346,418" fill="none" stroke="#2c2a25" stroke-width="1.5" />
-
-    <!-- Traveling Glowing Data Packets (<animateMotion>) -->
-    <circle r="4" fill="#ff3b00">
-      <animateMotion dur="2.2s" repeatCount="indefinite" path="M 990,160 C 1070,160 1100,289 1168,289" />
-    </circle>
-    <circle r="4" fill="#00e5ff">
-      <animateMotion dur="2.8s" repeatCount="indefinite" path="M 1346,160 C 1266,160 1236,289 1168,289" />
-    </circle>
-    <circle r="3.5" fill="#10b981">
-      <animateMotion dur="1.9s" repeatCount="indefinite" path="M 970,289 L 1168,289" />
-    </circle>
-    <circle r="3.5" fill="#ff3b00">
-      <animateMotion dur="2.1s" repeatCount="indefinite" path="M 1168,289 L 1366,289" />
-    </circle>
-    <circle r="4" fill="#10b981">
-      <animateMotion dur="2.5s" repeatCount="indefinite" path="M 1168,289 C 1100,289 1070,418 990,418" />
-    </circle>
-    <circle r="4" fill="#f4f1ea">
-      <animateMotion dur="2.4s" repeatCount="indefinite" path="M 1168,289 C 1236,289 1266,418 1346,418" />
-    </circle>
-
-    <!-- 6 Satellite Architecture Nodes -->
-    <rect x="944" y="146" width="88" height="28" rx="5" fill="#141311" stroke="#ff3b00" />
-    <text x="988" y="164" text-anchor="middle" class="mono bone" font-size="9.5">VECTOR DB</text>
-
-    <rect x="1304" y="146" width="88" height="28" rx="5" fill="#141311" stroke="#00e5ff" />
-    <text x="1348" y="164" text-anchor="middle" class="mono bone" font-size="9.5">DOCASSIST</text>
-
-    <rect x="944" y="275" width="88" height="28" rx="5" fill="#141311" stroke="#10b981" />
-    <text x="988" y="293" text-anchor="middle" class="mono bone" font-size="9.5">NEXT.JS 15</text>
-
-    <rect x="1304" y="275" width="88" height="28" rx="5" fill="#141311" stroke="#ff3b00" />
-    <text x="1348" y="293" text-anchor="middle" class="mono bone" font-size="9.5">CRON_AUTO</text>
-
-    <rect x="944" y="404" width="88" height="28" rx="5" fill="#141311" stroke="#8c877e" />
-    <text x="988" y="422" text-anchor="middle" class="mono bone" font-size="9.5">ROOMIFY UI</text>
-
-    <rect x="1304" y="404" width="88" height="28" rx="5" fill="#141311" stroke="#00e5ff" />
-    <text x="1348" y="422" text-anchor="middle" class="mono bone" font-size="9.5">NLP / SQL</text>
-
-    <!-- Central Pulsing AI Core -->
-    <circle cx="1168" cy="289" r="36" fill="#181210" stroke="#ff3b00" stroke-width="1.8">
-      <animate attributeName="r" values="32;40;32" dur="3s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="1168" cy="289" r="8" fill="#ff3b00" />
-    <text x="1168" y="460" text-anchor="middle" class="mono muted" font-size="9.5">HUBLI, IN [UTC+5:30]  ·  END-TO-END SYSTEM ORCHESTRATION</text>
-
-
-    <!-- ==================== 03. EDGE-TO-EDGE 1440px MARQUEE TICKER (y: 510 -> 554) ==================== -->
-    <line x1="0" y1="510" x2="1440" y2="510" class="border-line" />
-    <g clip-path="url(#ticker-clip)">
-      <rect x="0" y="510" width="1440" height="44" fill="#11100e" />
-      <text y="536" class="mono stone" font-size="11.5" letter-spacing="3">
-        <animate attributeName="x" from="0" to="-1400" dur="24s" repeatCount="indefinite" />
-        RAG ARCHITECTURES  ✦  TYPESCRIPT &amp; NEXT.JS  ✦  PYTHON &amp; PYTORCH  ✦  CLINICAL AI MODELS  ✦  DISTRIBUTED CRON SYSTEMS  ✦  NLP CLASSIFICATION  ✦  SQL &amp; POWER BI  ✦  RAG ARCHITECTURES  ✦  TYPESCRIPT &amp; NEXT.JS  ✦  PYTHON &amp; PYTORCH  ✦  CLINICAL AI MODELS  ✦  DISTRIBUTED CRON SYSTEMS  ✦  NLP CLASSIFICATION  ✦
-      </text>
-    </g>
-    <line x1="0" y1="554" x2="1440" y2="554" class="border-line" />
-
-
-    <!-- ==================== 04. PANORAMIC 3-COLUMN CASE STUDIES BENTO GRID (y: 554 -> 1080) ==================== -->
-    <!-- Section Header Bar -->
-    <text x="28" y="592" class="mono vermilion" font-size="11.5" letter-spacing="2">01 // SELECTED ENGINEERING WORKS &amp; LIVE SIMULATIONS</text>
-    <text x="1412" y="592" text-anchor="end" class="mono stone" font-size="11">WIDESCREEN ARCHIVE [01 — 03]</text>
-    <line x1="0" y1="610" x2="1440" y2="610" class="border-line" />
-
-    <!-- Vertical Column Dividers for 3-Column Panoramic Grid (480px each) -->
-    <line x1="480" y1="610" x2="480" y2="1080" class="border-line" />
-    <line x1="960" y1="610" x2="960" y2="1080" class="border-line" />
-
-    <!-- ──────── COLUMN 1 (x: 0 -> 480): RAG CLINICAL AI & DOCASSIST ──────── -->
-    <g>
-      <!-- Top Animated UI Mockup (432x210) -->
-      <rect x="24" y="632" width="432" height="210" rx="8" class="mockup-bg" />
-      <line x1="24" y1="662" x2="456" y2="662" stroke="#1e1c18" />
-      <circle cx="42" cy="647" r="4" fill="#ff3b00" />
-      <circle cx="56" cy="647" r="4" fill="#f59e0b" />
-      <circle cx="70" cy="647" r="4" fill="#10b981" />
-      <text x="88" y="651" class="mono stone" font-size="9.5">rag-emergency-triage — python</text>
-      <text x="440" y="651" text-anchor="end" class="mono emerald" font-size="9">● LIVE</text>
-
-      <!-- Search Prompt -->
-      <rect x="40" y="674" width="400" height="26" rx="4" fill="#12110f" stroke="#282622" />
-      <text x="52" y="691" class="mono bone" font-size="10">&gt; query: "diabetic ketoacidosis &amp; renal protocol"</text>
-      <rect x="366" y="680" width="6" height="13" fill="#ff3b00">
-        <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" />
-      </rect>
-
-      <!-- Animated Vector Retrieval Bars -->
-      <rect x="40" y="712" width="400" height="26" rx="4" fill="#11100e" />
-      <rect x="40" y="712" width="360" height="26" rx="4" fill="#ff3b00" opacity="0.16">
-        <animate attributeName="width" values="140;380;380;140" dur="5s" repeatCount="indefinite" />
-      </rect>
-      <text x="50" y="729" class="mono bone" font-size="9.5">01. KDIGO_Clinical_Renal_Emergency.pdf</text>
-      <text x="430" y="729" text-anchor="end" class="mono vermilion" font-size="9.5">0.991</text>
-
-      <rect x="40" y="744" width="400" height="26" rx="4" fill="#11100e" />
-      <rect x="40" y="744" width="310" height="26" rx="4" fill="#00e5ff" opacity="0.13">
-        <animate attributeName="width" values="100;330;330;100" dur="5s" repeatCount="indefinite" />
-      </rect>
-      <text x="50" y="761" class="mono silver" font-size="9.5">02. DOCASSIST_Cardiac_Triage_Model.pt</text>
-      <text x="430" y="761" text-anchor="end" class="mono cyan" font-size="9.5">0.958</text>
-
-      <!-- Verified Output Banner -->
-      <rect x="40" y="780" width="400" height="46" rx="4" fill="#0d1411" stroke="#163024" />
-      <text x="52" y="798" class="mono emerald" font-size="9.5">✓ CITATION-VERIFIED CLINICAL GUIDANCE:</text>
-      <text x="52" y="815" class="sans silver" font-size="10.5">Initiate isotonic saline + potassium monitoring prior to insulin.</text>
-
-      <!-- Card 01 Info -->
-      <text x="24" y="882" class="serif vermilion" font-size="34">01</text>
-      <text x="64" y="874" class="mono stone" font-size="10" letter-spacing="1.2">/ HEALTHCARE AI &amp; RAG ARCHITECTURE</text>
-      <text x="24" y="916" class="sans bone" font-size="23" font-weight="700" letter-spacing="-0.6">RAG First-Aid &amp; DOCASSIST AI</text>
-      <text x="24" y="944" class="sans stone" font-size="13.5">
-        Patient-safety-aware clinical decision engine for Diabetes, Cardiac,
-      </text>
-      <text x="24" y="964" class="sans stone" font-size="13.5">
-        and Renal emergencies using local embeddings &amp; live web evidence.
-      </text>
-      <text x="24" y="994" class="mono emerald" font-size="10">✦ ZERO-HALLUCINATION MEDICAL GUARDRAILS</text>
-
-      <!-- Pills -->
-      <rect x="24" y="1016" width="72" height="26" rx="4" class="pill" />
-      <text x="60" y="1033" text-anchor="middle" class="mono silver" font-size="10">Python</text>
-      <rect x="104" y="1016" width="96" height="26" rx="4" class="pill" />
-      <text x="152" y="1033" text-anchor="middle" class="mono silver" font-size="10">RAG / Vector</text>
-      <rect x="208" y="1016" width="94" height="26" rx="4" class="pill" />
-      <text x="255" y="1033" text-anchor="middle" class="mono silver" font-size="10">DOCASSIST</text>
-      <rect x="310" y="1016" width="82" height="26" rx="4" class="pill" />
-      <text x="351" y="1033" text-anchor="middle" class="mono silver" font-size="10">LLM APIs</text>
-    </g>
-
-    <!-- ──────── COLUMN 2 (x: 480 -> 960): ROOMIFY, HEYLUMO & CRON_AUTO ──────── -->
-    <g>
-      <!-- Top Animated UI Mockup (432x210) -->
-      <rect x="504" y="632" width="432" height="210" rx="8" class="mockup-bg" />
-      <line x1="504" y1="662" x2="936" y2="662" stroke="#1e1c18" />
-      <circle cx="522" cy="647" r="4" fill="#ff3b00" />
-      <circle cx="536" cy="647" r="4" fill="#f59e0b" />
-      <circle cx="550" cy="647" r="4" fill="#10b981" />
-      <text x="568" y="651" class="mono stone" font-size="9.5">roomify-cron-orchestrator — ts</text>
-      <text x="920" y="651" text-anchor="end" class="mono cyan" font-size="9">16 WORKERS</text>
-
-      <!-- Animated Distributed Pipeline inside Mockup -->
-      <line x1="560" y1="735" x2="880" y2="735" stroke="#262420" stroke-width="2" />
-      <circle r="5" fill="#ff3b00">
-        <animate attributeName="cx" values="560;720;880;560" dur="3.2s" repeatCount="indefinite" />
-        <animate attributeName="cy" values="735;735;735;735" dur="3.2s" repeatCount="indefinite" />
+    <!-- Right Hero Kinetic Wireframe Sculpture (x: 960 -> 1440) -->
+    <line x1="960" y1="64" x2="960" y2="540" class="line-dark" />
+    <g transform="translate(1200, 302)">
+      <!-- Rotating 3D Moiré Wireframe Sphere -->
+      <circle cx="0" cy="0" r="165" fill="none" stroke="#22211f" stroke-width="1" />
+      <ellipse cx="0" cy="0" rx="165" ry="55" fill="none" stroke="#f2efe9" stroke-width="1.2" opacity="0.8">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="0" cy="0" rx="165" ry="55" fill="none" stroke="#ff3b00" stroke-width="1.2" opacity="0.9">
+        <animateTransform attributeName="transform" type="rotate" from="60" to="420" dur="14s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="0" cy="0" rx="165" ry="55" fill="none" stroke="#f2efe9" stroke-width="1" opacity="0.5">
+        <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="22s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="0" cy="0" rx="165" ry="95" fill="none" stroke="#78746d" stroke-width="1" stroke-dasharray="6 6">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite" />
+      </ellipse>
+      <circle cx="0" cy="0" r="10" fill="#ff3b00">
+        <animate attributeName="r" values="8;14;8" dur="3s" repeatCount="indefinite" />
       </circle>
+    </g>
+    <text x="990" y="512" class="mono stone" font-size="10">FIG. 01 — KINETIC GEOMETRY [60FPS]</text>
 
-      <rect x="524" y="715" width="92" height="40" rx="6" fill="#141311" stroke="#ff3b00" />
-      <text x="570" y="733" text-anchor="middle" class="mono bone" font-size="9.5">CRON_AUTO</text>
-      <text x="570" y="746" text-anchor="middle" class="mono muted" font-size="8">SCHEDULER</text>
 
-      <rect x="674" y="715" width="92" height="40" rx="6" fill="#141311" stroke="#00e5ff">
-        <animate attributeName="stroke" values="#2c2a25;#00e5ff;#2c2a25" dur="3.2s" repeatCount="indefinite" />
-      </rect>
-      <text x="720" y="733" text-anchor="middle" class="mono bone" font-size="9.5">ROOMIFY</text>
-      <text x="720" y="746" text-anchor="middle" class="mono cyan" font-size="8">STATE SYNC</text>
-
-      <rect x="824" y="715" width="92" height="40" rx="6" fill="#141311" stroke="#10b981" />
-      <text x="870" y="733" text-anchor="middle" class="mono emerald" font-size="9.5">HEYLUMO</text>
-      <text x="870" y="746" text-anchor="middle" class="mono muted" font-size="8">200 OK</text>
-
-      <!-- Live Equalizer Telemetry Footer -->
-      <text x="524" y="814" class="mono muted" font-size="9.5">TASK QUEUE LATENCY: 4.2ms</text>
-      <rect x="840" y="796" width="7" height="24" rx="1.5" fill="#ff3b00">
-        <animate attributeName="height" values="8;26;8" dur="1.0s" repeatCount="indefinite" />
-        <animate attributeName="y" values="814;796;814" dur="1.0s" repeatCount="indefinite" />
-      </rect>
-      <rect x="854" y="792" width="7" height="28" rx="1.5" fill="#ff3b00">
-        <animate attributeName="height" values="28;10;28" dur="0.85s" repeatCount="indefinite" />
-        <animate attributeName="y" values="792;810;792" dur="0.85s" repeatCount="indefinite" />
-      </rect>
-      <rect x="868" y="798" width="7" height="22" rx="1.5" fill="#00e5ff">
-        <animate attributeName="height" values="12;28;12" dur="1.2s" repeatCount="indefinite" />
-        <animate attributeName="y" values="808;792;808" dur="1.2s" repeatCount="indefinite" />
-      </rect>
-      <rect x="882" y="794" width="7" height="26" rx="1.5" fill="#10b981">
-        <animate attributeName="height" values="24;8;24" dur="0.95s" repeatCount="indefinite" />
-        <animate attributeName="y" values="796;812;796" dur="0.95s" repeatCount="indefinite" />
-      </rect>
-
-      <!-- Card 02 Info -->
-      <text x="504" y="882" class="serif vermilion" font-size="34">02</text>
-      <text x="544" y="874" class="mono stone" font-size="10" letter-spacing="1.2">/ FULL-STACK WEB &amp; TASK AUTOMATION</text>
-      <text x="504" y="916" class="sans bone" font-size="23" font-weight="700" letter-spacing="-0.6">Roomify, Heylumo &amp; Cron_Auto</text>
-      <text x="504" y="944" class="sans stone" font-size="13.5">
-        Full-stack TypeScript web platforms and automated cron job
+    <!-- ================================================================================== -->
+    <!-- KINETIC MARQUEE DIVIDER (y: 540 -> 592 | High-Contrast Acid Lime #D4FF00)          -->
+    <!-- ================================================================================== -->
+    <g clip-path="url(#marquee-clip)">
+      <rect x="0" y="540" width="1440" height="52" fill="#d4ff00" />
+      <text y="572" class="sans ink" font-size="15" font-weight="700" letter-spacing="2">
+        <animate attributeName="x" from="0" to="-1350" dur="20s" repeatCount="indefinite" />
+        AI &amp; RAG ARCHITECTURE   ✺   FULL-STACK WEB SYSTEMS   ✺   NLP &amp; DATA INTELLIGENCE   ✺   TASK AUTOMATION   ✺   INTERFACE DESIGN   ✺   AI &amp; RAG ARCHITECTURE   ✺   FULL-STACK WEB SYSTEMS   ✺   NLP &amp; DATA INTELLIGENCE   ✺   TASK AUTOMATION   ✺
       </text>
-      <text x="504" y="964" class="sans stone" font-size="13.5">
-        orchestrators engineered for real-time collaboration and speed.
-      </text>
-      <text x="504" y="994" class="mono cyan" font-size="10">✦ 45+ AUTOMATED COMMITS &amp; ZERO-DOWNTIME DEPLOYS</text>
-
-      <!-- Pills -->
-      <rect x="504" y="1016" width="90" height="26" rx="4" class="pill" />
-      <text x="549" y="1033" text-anchor="middle" class="mono silver" font-size="10">TypeScript</text>
-      <rect x="602" y="1016" width="78" height="26" rx="4" class="pill" />
-      <text x="641" y="1033" text-anchor="middle" class="mono silver" font-size="10">Next.js</text>
-      <rect x="688" y="1016" width="76" height="26" rx="4" class="pill" />
-      <text x="726" y="1033" text-anchor="middle" class="mono silver" font-size="10">Node.js</text>
-      <rect x="772" y="1016" width="92" height="26" rx="4" class="pill" />
-      <text x="818" y="1033" text-anchor="middle" class="mono silver" font-size="10">Cron Engine</text>
     </g>
 
-    <!-- ──────── COLUMN 3 (x: 960 -> 1440): FLIPKART NLP & ANALYTICS SUITES ──────── -->
+
+    <!-- ================================================================================== -->
+    <!-- SECTION 02: KIGO.STUDIO/SERVICES/ ACCORDION ROWS (y: 592 -> 1290 | Paper #F2EFE9)  -->
+    <!-- ================================================================================== -->
+    <rect x="0" y="592" width="1440" height="698" fill="#f2efe9" />
+
+    <!-- Section Header -->
+    <text x="40" y="644" class="mono ink" font-size="12" font-weight="600" letter-spacing="1.5">(01 — SERVICES &amp; CAPABILITIES)</text>
+    <text x="480" y="644" class="sans stone" font-size="14">A multidisciplinary engineering practice built for speed, accuracy, and scale.</text>
+    <text x="1400" y="644" text-anchor="end" class="mono ink" font-size="12">[01 — 04]</text>
+    <line x1="40" y1="668" x2="1400" y2="668" class="line-light" />
+
+    <!-- ──────── SERVICE ROW 01 (y: 668 -> 818) ──────── -->
     <g>
-      <!-- Top Animated UI Mockup (432x210) -->
-      <rect x="984" y="632" width="432" height="210" rx="8" class="mockup-bg" />
-      <line x1="984" y1="662" x2="1416" y2="662" stroke="#1e1c18" />
-      <circle cx="1002" cy="647" r="4" fill="#ff3b00" />
-      <circle cx="1016" cy="647" r="4" fill="#f59e0b" />
-      <circle cx="1030" cy="647" r="4" fill="#10b981" />
-      <text x="1048" y="651" class="mono stone" font-size="9.5">flipkart-nlp-classifier — jupyter</text>
-      <text x="1400" y="651" text-anchor="end" class="mono vermilion" font-size="9">F1: 0.968</text>
+      <text x="40" y="728" class="mono vermilion" font-size="14" font-weight="600">(01)</text>
+      <text x="120" y="742" class="sans ink" font-size="52" font-weight="700" letter-spacing="-2">AI &amp; RAG</text>
+      <text x="368" y="742" class="serif ink" font-size="58">Systems</text>
 
-      <!-- Animated Multi-Wave Telemetry Oscilloscope -->
-      <path fill="none" stroke="#00e5ff" stroke-width="2.2">
-        <animate attributeName="d" dur="4.5s" repeatCount="indefinite"
-          values="M 1004,790 Q 1080,690 1160,760 T 1310,700 L 1396,685;
-                  M 1004,770 Q 1080,810 1160,700 T 1310,775 L 1396,675;
-                  M 1004,790 Q 1080,690 1160,760 T 1310,700 L 1396,685" />
-      </path>
-      <path fill="none" stroke="#ff3b00" stroke-width="1.6" stroke-dasharray="5 4">
-        <animate attributeName="d" dur="5.5s" repeatCount="indefinite"
-          values="M 1004,805 Q 1100,760 1190,715 T 1330,755 L 1396,720;
-                  M 1004,755 Q 1100,695 1190,785 T 1330,705 L 1396,745;
-                  M 1004,805 Q 1100,760 1190,715 T 1330,755 L 1396,720" />
-      </path>
+      <!-- Deliverables Column -->
+      <text x="650" y="712" class="sans ink" font-size="14" font-weight="600">Retrieval-Augmented Generation &amp; Clinical Triage</text>
+      <text x="650" y="736" class="sans stone" font-size="13.5">Building evidence-grounded LLM pipelines, vector search</text>
+      <text x="650" y="756" class="sans stone" font-size="13.5">engines, and zero-hallucination decision models.</text>
+      <text x="650" y="784" class="mono ink" font-size="10.5" letter-spacing="0.5">PYTHON  /  VECTOR DB  /  DOCASSIST  /  LANGCHAIN  /  LLMS</text>
 
-      <!-- Scanning Radar Line -->
-      <line y1="670" y2="825" stroke="#f4f1ea" stroke-width="1" stroke-dasharray="3 3">
-        <animate attributeName="x1" values="1020;1380;1020" dur="5.5s" repeatCount="indefinite" />
-        <animate attributeName="x2" values="1020;1380;1020" dur="5.5s" repeatCount="indefinite" />
-      </line>
-      <circle cy="740" r="4.5" fill="#00e5ff">
-        <animate attributeName="cx" values="1020;1380;1020" dur="5.5s" repeatCount="indefinite" />
-      </circle>
+      <!-- Kinetic Geometric Totem 01 -->
+      <g transform="translate(1310, 742)">
+        <circle cx="0" cy="0" r="36" fill="none" stroke="#0a0a0a" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="18" fill="none" stroke="#ff3b00" stroke-width="2">
+          <animate attributeName="r" values="8;32;8" dur="3.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="0" cy="0" r="5" fill="#0a0a0a" />
+      </g>
+      <text x="1395" y="750" text-anchor="end" class="sans ink" font-size="24">↗</text>
+    </g>
+    <line x1="40" y1="818" x2="1400" y2="818" class="line-light" />
 
-      <!-- Card 03 Info -->
-      <text x="984" y="882" class="serif vermilion" font-size="34">03</text>
-      <text x="1024" y="874" class="mono stone" font-size="10" letter-spacing="1.2">/ NLP CLASSIFICATION &amp; BI ANALYTICS</text>
-      <text x="984" y="916" class="sans bone" font-size="23" font-weight="700" letter-spacing="-0.6">Flipkart NLP &amp; BI Analytics Suites</text>
-      <text x="984" y="944" class="sans stone" font-size="13.5">
-        Automated e-commerce product taxonomy classification alongside
-      </text>
-      <text x="984" y="964" class="sans stone" font-size="13.5">
-        Hospitality, Sales, and T20 Cricket intelligence dashboards.
-      </text>
-      <text x="984" y="994" class="mono vermilion" font-size="10">✦ MULTI-CLASS TEXT EMBEDDINGS &amp; SQL DATA WAREHOUSING</text>
+    <!-- ──────── SERVICE ROW 02 (y: 818 -> 968) ──────── -->
+    <g>
+      <text x="40" y="878" class="mono vermilion" font-size="14" font-weight="600">(02)</text>
+      <text x="120" y="892" class="sans ink" font-size="52" font-weight="700" letter-spacing="-2">Full-Stack</text>
+      <text x="380" y="892" class="serif ink" font-size="58">Products</text>
 
-      <!-- Pills -->
-      <rect x="984" y="1016" width="72" height="26" rx="4" class="pill" />
-      <text x="1020" y="1033" text-anchor="middle" class="mono silver" font-size="10">Python</text>
-      <rect x="1064" y="1016" width="84" height="26" rx="4" class="pill" />
-      <text x="1106" y="1033" text-anchor="middle" class="mono silver" font-size="10">NLP / ML</text>
-      <rect x="1156" y="1016" width="64" height="26" rx="4" class="pill" />
-      <text x="1188" y="1033" text-anchor="middle" class="mono silver" font-size="10">SQL</text>
-      <rect x="1228" y="1016" width="86" height="26" rx="4" class="pill" />
-      <text x="1271" y="1033" text-anchor="middle" class="mono silver" font-size="10">Power BI</text>
+      <!-- Deliverables Column -->
+      <text x="650" y="862" class="sans ink" font-size="14" font-weight="600">Modern Web Applications &amp; Interactive UI</text>
+      <text x="650" y="886" class="sans stone" font-size="13.5">End-to-end TypeScript platforms (Roomify, Heylumo) with</text>
+      <text x="650" y="906" class="sans stone" font-size="13.5">real-time state synchronization and fluid 60fps interfaces.</text>
+      <text x="650" y="934" class="mono ink" font-size="10.5" letter-spacing="0.5">TYPESCRIPT  /  NEXT.JS  /  REACT  /  NODE.JS  /  TAILWIND</text>
+
+      <!-- Kinetic Geometric Totem 02 -->
+      <g transform="translate(1274, 862)">
+        <rect x="0" y="0" width="72" height="60" fill="none" stroke="#0a0a0a" stroke-width="1.5" />
+        <rect x="8" y="10" width="24" height="40" fill="#ff3b00">
+          <animate attributeName="x" values="8;40;8" dur="3s" repeatCount="indefinite" />
+        </rect>
+      </g>
+      <text x="1395" y="900" text-anchor="end" class="sans ink" font-size="24">↗</text>
+    </g>
+    <line x1="40" y1="968" x2="1400" y2="968" class="line-light" />
+
+    <!-- ──────── SERVICE ROW 03 (y: 968 -> 1118) ──────── -->
+    <g>
+      <text x="40" y="1028" class="mono vermilion" font-size="14" font-weight="600">(03)</text>
+      <text x="120" y="1042" class="sans ink" font-size="52" font-weight="700" letter-spacing="-2">Data &amp; ML</text>
+      <text x="385" y="1042" class="serif ink" font-size="58">Intelligence</text>
+
+      <!-- Deliverables Column -->
+      <text x="650" y="1012" class="sans ink" font-size="14" font-weight="600">NLP Classification &amp; Executive BI Suites</text>
+      <text x="650" y="1036" class="sans stone" font-size="13.5">Large-scale e-commerce taxonomy classifiers (Flipkart NLP)</text>
+      <text x="650" y="1056" class="sans stone" font-size="13.5">and multi-source SQL / Power BI decision dashboards.</text>
+      <text x="650" y="1084" class="mono ink" font-size="10.5" letter-spacing="0.5">SCIKIT-LEARN  /  NLP  /  SQL  /  POWER BI  /  PANDAS</text>
+
+      <!-- Kinetic Geometric Totem 03 -->
+      <g transform="translate(1274, 1042)">
+        <path fill="none" stroke="#0a0a0a" stroke-width="2">
+          <animate attributeName="d" dur="3s" repeatCount="indefinite"
+            values="M 0,0 Q 18,-28 36,0 T 72,0;
+                    M 0,0 Q 18,28 36,0 T 72,0;
+                    M 0,0 Q 18,-28 36,0 T 72,0" />
+        </path>
+        <circle cx="36" cy="0" r="5" fill="#ff3b00" />
+      </g>
+      <text x="1395" y="1050" text-anchor="end" class="sans ink" font-size="24">↗</text>
+    </g>
+    <line x1="40" y1="1118" x2="1400" y2="1118" class="line-light" />
+
+    <!-- ──────── SERVICE ROW 04 (y: 1118 -> 1268) ──────── -->
+    <g>
+      <text x="40" y="1178" class="mono vermilion" font-size="14" font-weight="600">(04)</text>
+      <text x="120" y="1192" class="sans ink" font-size="52" font-weight="700" letter-spacing="-2">Workflow</text>
+      <text x="360" y="1192" class="serif ink" font-size="58">Automation</text>
+
+      <!-- Deliverables Column -->
+      <text x="650" y="1162" class="sans ink" font-size="14" font-weight="600">Distributed Cron Engines &amp; DevOps Pipelines</text>
+      <text x="650" y="1186" class="sans stone" font-size="13.5">Fault-tolerant task schedulers (Cron_Auto), automated</text>
+      <text x="650" y="1206" class="sans stone" font-size="13.5">GitHub orchestration, and containerized cloud deployments.</text>
+      <text x="650" y="1234" class="mono ink" font-size="10.5" letter-spacing="0.5">CRON_AUTO  /  DOCKER  /  GITHUB ACTIONS  /  LINUX  /  VERCEL</text>
+
+      <!-- Kinetic Geometric Totem 04 -->
+      <g transform="translate(1310, 1192)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
+          <rect x="-24" y="-24" width="48" height="48" fill="none" stroke="#0a0a0a" stroke-width="1.5" />
+          <rect x="-12" y="-12" width="24" height="24" fill="#ff3b00" />
+        </g>
+      </g>
+      <text x="1395" y="1200" text-anchor="end" class="sans ink" font-size="24">↗</text>
     </g>
 
 
-    <!-- ==================== 05. WIDESCREEN 3-COLUMN EXPERIENCE, STACK & RADAR (y: 1080 -> 1520) ==================== -->
-    <line x1="0" y1="1080" x2="1440" y2="1080" class="border-line" />
-    <line x1="480" y1="1080" x2="480" y2="1520" class="border-line" />
-    <line x1="960" y1="1080" x2="960" y2="1520" class="border-line" />
+    <!-- ================================================================================== -->
+    <!-- SECTION 03: SELECTED WORKS — EDITORIAL POSTER GRID (y: 1290 -> 1820 | #0A0A0A)     -->
+    <!-- ================================================================================== -->
+    <rect x="0" y="1290" width="1440" height="530" fill="#0a0a0a" />
 
-    <!-- ──────── COL 1 (x: 0 -> 480): EXPERIENCE & TENURE TIMELINE ──────── -->
-    <text x="28" y="1120" class="mono vermilion" font-size="11" letter-spacing="2">02 // EXPERIENCE &amp; TENURE</text>
+    <text x="40" y="1346" class="mono vermilion" font-size="12" letter-spacing="1.5">(02 — SELECTED CASE STUDIES)</text>
+    <text x="1400" y="1346" text-anchor="end" class="mono stone" font-size="12">PRODUCTION ARCHIVE [2024 — 2026]</text>
+    <line x1="40" y1="1370" x2="1400" y2="1370" class="line-dark" />
 
-    <!-- Animated Timeline Spine -->
-    <line x1="40" y1="1150" x2="40" y2="1465" stroke="#282622" stroke-width="2" />
-    <circle cx="40" r="4" fill="#ff3b00">
-      <animate attributeName="cy" values="1160;1455;1160" dur="6s" repeatCount="indefinite" />
-    </circle>
+    <!-- ──────── POSTER 01: VERMILION STUDIO CARD (x: 40 -> 472) ──────── -->
+    <g transform="translate(40, 1396)">
+      <rect width="432" height="384" rx="4" fill="#ff3b00" />
+      <text x="28" y="40" class="mono ink" font-size="11" font-weight="600">(CASE 01 — HEALTHCARE AI)</text>
+      <text x="404" y="40" text-anchor="end" class="mono ink" font-size="11" font-weight="600">2026</text>
 
-    <!-- Role 1 -->
-    <circle cx="40" cy="1160" r="5.5" fill="#ff3b00" />
-    <text x="64" y="1164" class="mono vermilion" font-size="10" letter-spacing="1">2025 — PRESENT · LEAD BUILDER</text>
-    <text x="64" y="1188" class="sans bone" font-size="17" font-weight="600">AI &amp; Full-Stack Systems Engineer</text>
-    <text x="64" y="1210" class="sans stone" font-size="12.5">Building clinical RAG assistants, distributed cron schedulers,</text>
-    <text x="64" y="1228" class="sans stone" font-size="12.5">and modern TypeScript/Next.js web applications.</text>
+      <!-- Minimalist Brutalist Kinetic Graphic -->
+      <g transform="translate(216, 150)">
+        <circle cx="0" cy="0" r="68" fill="none" stroke="#0a0a0a" stroke-width="1.5" stroke-dasharray="6 4">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite" />
+        </circle>
+        <path d="M -28,0 L 28,0 M 0,-28 L 0,28" stroke="#0a0a0a" stroke-width="8" />
+        <circle cx="0" cy="0" r="42" fill="none" stroke="#f2efe9" stroke-width="2">
+          <animate attributeName="r" values="24;58;24" dur="3.5s" repeatCount="indefinite" />
+        </circle>
+      </g>
 
-    <!-- Role 2 -->
-    <circle cx="40" cy="1275" r="4.5" fill="#141311" stroke="#8c877e" stroke-width="1.5" />
-    <text x="64" y="1279" class="mono stone" font-size="10" letter-spacing="1">2024 — 2025 · DATA &amp; ML ENGINEERING</text>
-    <text x="64" y="1303" class="sans bone" font-size="17" font-weight="600">Machine Learning &amp; BI Developer</text>
-    <text x="64" y="1325" class="sans stone" font-size="12.5">Engineered Flipkart NLP product classifiers and end-to-end</text>
-    <text x="64" y="1343" class="sans stone" font-size="12.5">SQL / Power BI analytics suites for hospitality and sports.</text>
+      <line x1="28" y1="256" x2="404" y2="256" stroke="#0a0a0a" stroke-width="1" opacity="0.25" />
+      <text x="28" y="294" class="sans ink" font-size="28" font-weight="700" letter-spacing="-1">Clinical RAG &amp; DOCASSIST</text>
+      <text x="28" y="322" class="sans ink" font-size="13.5" opacity="0.85">Emergency first-aid RAG chatbot &amp; clinical decision</text>
+      <text x="28" y="342" class="sans ink" font-size="13.5" opacity="0.85">support for Diabetes, Cardiac &amp; Renal triage.</text>
+      <text x="28" y="368" class="mono ink" font-size="10.5" font-weight="600">PYTHON  ·  VECTOR EMBEDDINGS  ·  LLM GUARDRAILS ↗</text>
+    </g>
 
-    <!-- Role 3 -->
-    <circle cx="40" cy="1390" r="4.5" fill="#141311" stroke="#524f49" stroke-width="1.5" />
-    <text x="64" y="1394" class="mono stone" font-size="10" letter-spacing="1">OPEN SOURCE &amp; HACKATHON ORCHESTRATION</text>
-    <text x="64" y="1418" class="sans bone" font-size="17" font-weight="600">74+ Repositories &amp; 1,697+ Contributions</text>
-    <text x="64" y="1440" class="sans stone" font-size="12.5">Shipping high-velocity open-source tools, AI prototypes,</text>
-    <text x="64" y="1458" class="sans stone" font-size="12.5">and full-stack web templates recognized by the community.</text>
+    <!-- ──────── POSTER 02: STARK WARM PAPER CARD (x: 504 -> 936) ──────── -->
+    <g transform="translate(504, 1396)">
+      <rect width="432" height="384" rx="4" fill="#f2efe9" />
+      <text x="28" y="40" class="mono ink" font-size="11" font-weight="600">(CASE 02 — FULL-STACK SYSTEMS)</text>
+      <text x="404" y="40" text-anchor="end" class="mono ink" font-size="11" font-weight="600">2026</text>
+
+      <!-- Minimalist Kinetic Graphic: Shifting Architectural Bars -->
+      <g transform="translate(116, 95)">
+        <rect x="0" y="0" width="200" height="24" fill="#0a0a0a">
+          <animate attributeName="width" values="110;200;110" dur="3s" repeatCount="indefinite" />
+        </rect>
+        <rect x="0" y="38" width="140" height="24" fill="#ff3b00">
+          <animate attributeName="width" values="200;90;200" dur="3s" repeatCount="indefinite" />
+        </rect>
+        <rect x="0" y="76" width="175" height="24" fill="#0a0a0a">
+          <animate attributeName="width" values="130;190;130" dur="2.5s" repeatCount="indefinite" />
+        </rect>
+      </g>
+
+      <line x1="28" y1="256" x2="404" y2="256" stroke="#0a0a0a" stroke-width="1" opacity="0.15" />
+      <text x="28" y="294" class="sans ink" font-size="28" font-weight="700" letter-spacing="-1">Roomify, Heylumo &amp; Cron</text>
+      <text x="28" y="322" class="sans stone" font-size="13.5">Full-stack TypeScript web platforms and automated</text>
+      <text x="28" y="342" class="sans stone" font-size="13.5">task scheduling engines built for real-time scale.</text>
+      <text x="28" y="368" class="mono ink" font-size="10.5" font-weight="600">TYPESCRIPT  ·  NEXT.JS  ·  NODE.JS  ·  CRON_AUTO ↗</text>
+    </g>
+
+    <!-- ──────── POSTER 03: CARBON & ACID LIME CARD (x: 968 -> 1400) ──────── -->
+    <g transform="translate(968, 1396)">
+      <rect width="432" height="384" rx="4" fill="#141413" stroke="#2c2b28" stroke-width="1" />
+      <text x="28" y="40" class="mono lime" font-size="11" font-weight="600">(CASE 03 — ML &amp; DATA INTELLIGENCE)</text>
+      <text x="404" y="40" text-anchor="end" class="mono stone" font-size="11">2025</text>
+
+      <!-- Minimalist Kinetic Graphic: Harmonic Data Waves -->
+      <g transform="translate(66, 150)">
+        <path fill="none" stroke="#d4ff00" stroke-width="2.5">
+          <animate attributeName="d" dur="4s" repeatCount="indefinite"
+            values="M 0,0 Q 75,-55 150,0 T 300,0;
+                    M 0,0 Q 75,55 150,0 T 300,0;
+                    M 0,0 Q 75,-55 150,0 T 300,0" />
+        </path>
+        <path fill="none" stroke="#f2efe9" stroke-width="1.2" stroke-dasharray="4 4">
+          <animate attributeName="d" dur="4s" repeatCount="indefinite"
+            values="M 0,0 Q 75,45 150,0 T 300,0;
+                    M 0,0 Q 75,-45 150,0 T 300,0;
+                    M 0,0 Q 75,45 150,0 T 300,0" />
+        </path>
+      </g>
+
+      <line x1="28" y1="256" x2="404" y2="256" class="line-dark" />
+      <text x="28" y="294" class="sans paper" font-size="28" font-weight="700" letter-spacing="-1">Flipkart NLP &amp; BI Suites</text>
+      <text x="28" y="322" class="sans stone" font-size="13.5">E-commerce product taxonomy classification models</text>
+      <text x="28" y="342" class="sans stone" font-size="13.5">&amp; Hospitality / T20 Cricket intelligence dashboards.</text>
+      <text x="28" y="368" class="mono lime" font-size="10.5">PYTHON  ·  NLP / SCIKIT  ·  SQL  ·  POWER BI ↗</text>
+    </g>
 
 
-    <!-- ──────── COL 2 (x: 480 -> 960): TECHNICAL SPECIFICATION MATRIX ──────── -->
-    <text x="504" y="1120" class="mono vermilion" font-size="11" letter-spacing="2">03 // TECHNICAL SPECIFICATION MATRIX</text>
+    <!-- ================================================================================== -->
+    <!-- SECTION 04: THE STUDIO METHODOLOGY / PROCESS (y: 1820 -> 2010 | #111110)           -->
+    <!-- ================================================================================== -->
+    <rect x="0" y="1820" width="1440" height="190" fill="#111110" />
+    <line x1="0" y1="1820" x2="1440" y2="1820" class="line-dark" />
 
-    <!-- Spec 1 -->
-    <rect x="504" y="1144" width="432" height="106" rx="8" class="card-bg" />
-    <text x="524" y="1170" class="mono bone" font-size="11" font-weight="600">01 // AI, RAG &amp; DATA SCIENCE</text>
-    <text x="916" y="1170" text-anchor="end" class="mono vermilion" font-size="10">96%</text>
-    <rect x="524" y="1182" width="392" height="4" rx="2" fill="#22201c" />
-    <rect x="524" y="1182" width="376" height="4" rx="2" fill="#ff3b00">
-      <animate attributeName="width" values="290;376;290" dur="5s" repeatCount="indefinite" />
+    <!-- Animated Progress Laser Scanning Across the 4 Process Steps -->
+    <line x1="40" y1="1872" x2="1400" y2="1872" stroke="#262522" stroke-width="2" />
+    <rect y="1871" width="180" height="3" fill="#ff3b00">
+      <animate attributeName="x" values="40;1220;40" dur="8s" repeatCount="indefinite" />
     </rect>
-    <text x="524" y="1210" class="sans stone" font-size="12.5">Python, RAG Pipelines, Vector Embeddings, LLM Orchestration,</text>
-    <text x="524" y="1230" class="sans stone" font-size="12.5">NLP Classification, Jupyter, Pandas, SQL, Power BI</text>
 
-    <!-- Spec 2 -->
-    <rect x="504" y="1264" width="432" height="106" rx="8" class="card-bg" />
-    <text x="524" y="1290" class="mono bone" font-size="11" font-weight="600">02 // FULL-STACK WEB &amp; INTERFACE CRAFT</text>
-    <text x="916" y="1290" text-anchor="end" class="mono cyan" font-size="10">94%</text>
-    <rect x="524" y="1302" width="392" height="4" rx="2" fill="#22201c" />
-    <rect x="524" y="1302" width="364" height="4" rx="2" fill="#00e5ff">
-      <animate attributeName="width" values="270;364;270" dur="4.5s" repeatCount="indefinite" />
-    </rect>
-    <text x="524" y="1330" class="sans stone" font-size="12.5">TypeScript, JavaScript, React, Next.js, Tailwind CSS, Node.js,</text>
-    <text x="524" y="1350" class="sans stone" font-size="12.5">Realtime State Sync, REST APIs, Interactive SVG Motion</text>
+    <g transform="translate(40, 1852)">
+      <text x="0" y="0" class="mono vermilion" font-size="11">STEP 01</text>
+      <text x="0" y="56" class="sans paper" font-size="20" font-weight="700" letter-spacing="-0.5">Architecture &amp; Spec</text>
+      <text x="0" y="82" class="sans stone" font-size="13">System design, data modeling, and</text>
+      <text x="0" y="100" class="sans stone" font-size="13">zero-bloat technical foundations.</text>
+    </g>
 
-    <!-- Spec 3 -->
-    <rect x="504" y="1384" width="432" height="106" rx="8" class="card-bg" />
-    <text x="524" y="1410" class="mono bone" font-size="11" font-weight="600">03 // AUTOMATION, CLOUD &amp; DEVOPS</text>
-    <text x="916" y="1410" text-anchor="end" class="mono emerald" font-size="10">92%</text>
-    <rect x="524" y="1422" width="392" height="4" rx="2" fill="#22201c" />
-    <rect x="524" y="1422" width="352" height="4" rx="2" fill="#10b981">
-      <animate attributeName="width" values="260;352;260" dur="5.5s" repeatCount="indefinite" />
-    </rect>
-    <text x="524" y="1450" class="sans stone" font-size="12.5">Git, GitHub Actions, Cron Orchestration, Docker, Linux, Vercel,</text>
-    <text x="524" y="1470" class="sans stone" font-size="12.5">Database Architecture, Automated Testing &amp; Deployment</text>
+    <g transform="translate(390, 1852)">
+      <text x="0" y="0" class="mono stone" font-size="11">STEP 02</text>
+      <text x="0" y="56" class="sans paper" font-size="20" font-weight="700" letter-spacing="-0.5">AI &amp; Core Engineering</text>
+      <text x="0" y="82" class="sans stone" font-size="13">Building RAG pipelines, APIs, and</text>
+      <text x="0" y="100" class="sans stone" font-size="13">automated backend workflows.</text>
+    </g>
 
+    <g transform="translate(740, 1852)">
+      <text x="0" y="0" class="mono stone" font-size="11">STEP 03</text>
+      <text x="0" y="56" class="sans paper" font-size="20" font-weight="700" letter-spacing="-0.5">Tactile Interface Craft</text>
+      <text x="0" y="82" class="sans stone" font-size="13">Editorial typography, micro-motion,</text>
+      <text x="0" y="100" class="sans stone" font-size="13">and responsive Next.js frontends.</text>
+    </g>
 
-    <!-- ──────── COL 3 (x: 960 -> 1440): LIVE MULTI-AXIS RADAR & MANIFESTO ──────── -->
-    <text x="984" y="1120" class="mono vermilion" font-size="11" letter-spacing="2">04 // SYSTEM TELEMETRY RADAR</text>
-
-    <rect x="984" y="1144" width="432" height="232" rx="8" class="mockup-bg" />
-    <!-- Radar Concentric Grid -->
-    <circle cx="1200" cy="1260" r="82" fill="none" stroke="#22201c" stroke-width="1" />
-    <circle cx="1200" cy="1260" r="54" fill="none" stroke="#22201c" stroke-width="1" stroke-dasharray="3 3" />
-    <circle cx="1200" cy="1260" r="26" fill="none" stroke="#22201c" stroke-width="1" />
-    <line x1="1100" y1="1260" x2="1300" y2="1260" stroke="#1a1916" />
-    <line x1="1200" y1="1168" x2="1200" y2="1352" stroke="#1a1916" />
-
-    <!-- Morphing Skill Polygon -->
-    <polygon fill="#ff3b00" fill-opacity="0.18" stroke="#ff3b00" stroke-width="1.8">
-      <animate attributeName="points" dur="6s" repeatCount="indefinite"
-        values="1200,1184 1272,1225 1260,1315 1200,1334 1132,1305 1138,1218;
-                1200,1192 1264,1232 1270,1305 1200,1326 1140,1312 1128,1225;
-                1200,1184 1272,1225 1260,1315 1200,1334 1132,1305 1138,1218" />
-    </polygon>
-
-    <!-- Rotating Radar Sweep Line -->
-    <line x1="1200" y1="1260" x2="1200" y2="1178" stroke="#00e5ff" stroke-width="1.5">
-      <animateTransform attributeName="transform" type="rotate" from="0 1200 1260" to="360 1200 1260" dur="5s" repeatCount="indefinite" />
-    </line>
-    <circle cx="1200" cy="1260" r="4" fill="#f4f1ea" />
-
-    <!-- Radar Axis Labels -->
-    <text x="1200" y="1166" text-anchor="middle" class="mono bone" font-size="9">AI / RAG</text>
-    <text x="1312" y="1224" class="mono silver" font-size="9">NEXT.JS</text>
-    <text x="1312" y="1314" class="mono silver" font-size="9">PYTHON</text>
-    <text x="1200" y="1364" text-anchor="middle" class="mono silver" font-size="9">DATA / SQL</text>
-    <text x="1088" y="1314" text-anchor="end" class="mono silver" font-size="9">AUTOMATION</text>
-    <text x="1088" y="1224" text-anchor="end" class="mono silver" font-size="9">UI MOTION</text>
-
-    <!-- Manifesto Box (y: 1388 -> 1490) -->
-    <rect x="984" y="1388" width="432" height="102" rx="8" class="card-bg" />
-    <text x="1004" y="1414" class="mono vermilion" font-size="9.5" letter-spacing="1.5">ENGINEERING PHILOSOPHY</text>
-    <text x="1004" y="1444" class="serif bone" font-size="24">“Speed is a feature. Precision is law.”</text>
-    <text x="1004" y="1470" class="mono muted" font-size="9.5">ZERO BLOAT  ·  EVIDENCE-GROUNDED AI  ·  TACTILE WEB</text>
+    <g transform="translate(1090, 1852)">
+      <text x="0" y="0" class="mono lime" font-size="11">STEP 04</text>
+      <text x="0" y="56" class="sans paper" font-size="20" font-weight="700" letter-spacing="-0.5">Ship &amp; Telemetry</text>
+      <text x="0" y="82" class="sans stone" font-size="13">CI/CD deployment, observability,</text>
+      <text x="0" y="100" class="sans stone" font-size="13">and sub-millisecond optimization.</text>
+    </g>
 
 
-    <!-- ==================== 06. PANORAMIC WIDESCREEN FOOTER (y: 1520 -> 1740) ==================== -->
-    <line x1="0" y1="1520" x2="1440" y2="1520" class="border-line" />
-    <rect x="0" y="1521" width="1440" height="219" fill="#0d0c0a" />
+    <!-- ================================================================================== -->
+    <!-- SECTION 05: MONUMENTAL STUDIO FOOTER (y: 2010 -> 2240 | Vermilion #FF3B00 Block)   -->
+    <!-- ================================================================================== -->
+    <rect x="0" y="2010" width="1440" height="230" fill="#ff3b00" />
 
-    <text x="28" y="1564" class="mono vermilion" font-size="11" letter-spacing="2">05 // INITIATE DIALOGUE</text>
-    <text x="28" y="1624" class="sans bone" font-size="48" font-weight="700" letter-spacing="-1.8">Let’s build something</text>
-    <text x="524" y="1624" class="serif vermilion" font-size="56">extraordinary.</text>
+    <text x="40" y="2058" class="mono ink" font-size="12" font-weight="600" letter-spacing="1.5">(03 — INITIATE A CONVERSATION)</text>
+    <text x="36" y="2148" class="sans ink" font-size="88" font-weight="700" letter-spacing="-4">LET’S BUILD TOGETHER ↗</text>
 
-    <!-- Horizontal Contact Cards on Right Side of Footer -->
-    <rect x="780" y="1568" width="210" height="64" rx="8" class="card-bg" />
-    <text x="800" y="1592" class="mono muted" font-size="9.5">WEB PORTAL</text>
-    <text x="800" y="1614" class="mono bone" font-size="12">↗ freefirezilla.com</text>
+    <!-- Bottom Studio Colophon Bar -->
+    <line x1="40" y1="2178" x2="1400" y2="2178" stroke="#0a0a0a" stroke-width="1.5" opacity="0.25" />
+    <text x="40" y="2208" class="mono ink" font-size="11.5" font-weight="600" letter-spacing="1">PORTAL: FREEFIREZILLA.COM</text>
+    <text x="340" y="2208" class="mono ink" font-size="11.5" font-weight="600" letter-spacing="1">LINKEDIN: /IN/RANJAN-VERNEKAR</text>
+    <text x="690" y="2208" class="mono ink" font-size="11.5" font-weight="600" letter-spacing="1">GITHUB: @REALRANJAN</text>
+    <text x="1400" y="2208" text-anchor="end" class="mono ink" font-size="11.5" font-weight="600" letter-spacing="1">© 2026 RANJAN VERNEKAR STUDIO</text>
 
-    <rect x="1004" y="1568" width="240" height="64" rx="8" class="card-bg" />
-    <text x="1024" y="1592" class="mono muted" font-size="9.5">LINKEDIN NETWORK</text>
-    <text x="1024" y="1614" class="mono bone" font-size="12">↗ in/ranjan-vernekar</text>
-
-    <!-- Rotating Seal on Far Right -->
-    <circle cx="1340" cy="1600" r="46" fill="none" stroke="#2c2a25" stroke-width="1" stroke-dasharray="4 4">
-      <animateTransform attributeName="transform" type="rotate" from="0 1340 1600" to="360 1340 1600" dur="20s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="1340" cy="1600" r="30" fill="none" stroke="#ff3b00" stroke-width="1" opacity="0.5" />
-    <circle cx="1340" cy="1554" r="4" fill="#ff3b00">
-      <animateTransform attributeName="transform" type="rotate" from="0 1340 1600" to="360 1340 1600" dur="6s" repeatCount="indefinite" />
-    </circle>
-    <text x="1340" y="1604" text-anchor="middle" class="mono bone" font-size="10" letter-spacing="1">2026</text>
-
-    <!-- Bottom Colophon Bar -->
-    <line x1="0" y1="1674" x2="1440" y2="1674" class="border-line" />
-    <text x="28" y="1708" class="mono muted" font-size="10.5" letter-spacing="1">DESIGNED &amp; ENGINEERED BY RANJAN VERNEKAR (@REALRANJAN)  ·  1440PX WIDESCREEN SMIL ARCHITECTURE</text>
-    <text x="1412" y="1708" text-anchor="end" class="mono stone" font-size="10.5" letter-spacing="1">HUBLI, INDIA // [UTC+5:30]</text>
-
-    <!-- Master Outer Border -->
-    <rect x="0.5" y="0.5" width="1439" height="1739" rx="14" fill="none" stroke="#282622" stroke-width="1" />
   </g>
 </svg>
