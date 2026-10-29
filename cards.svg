@@ -1,0 +1,93 @@
+<svg viewBox="0 0 900 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&amp;family=Inter:wght@400;500;600&amp;display=swap');
+
+      .card {
+        fill: #0b0b12;
+        stroke: #1e293b;
+        stroke-width: 1.5;
+        rx: 20px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .card-group:hover .card {
+        stroke: #6366f1;
+        fill: #11111d;
+        transform: translateY(-6px);
+      }
+      .card-title {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        fill: #f8fafc;
+      }
+      .card-desc {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        fill: #94a3b8;
+      }
+      .tag {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        fill: #a855f7;
+      }
+      .bar {
+        fill: url(#bar-grad);
+        rx: 2px;
+        animation: eq 1.2s ease-in-out infinite alternate;
+      }
+      .bar-1 { animation-delay: 0.1s; }
+      .bar-2 { animation-delay: 0.4s; }
+      .bar-3 { animation-delay: 0.2s; }
+      .bar-4 { animation-delay: 0.6s; }
+
+      @keyframes eq {
+        0% { height: 8px; y: 42px; }
+        100% { height: 32px; y: 18px; }
+      }
+    </style>
+    <linearGradient id="bar-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card 1: What I Do -->
+  <g class="card-group" transform="translate(0, 10)">
+    <rect x="0" y="0" width="285" height="200" class="card" />
+    <circle cx="40" cy="45" r="20" fill="rgba(99, 102, 241, 0.1)" />
+    <path d="M33 45 L38 50 L48 40" stroke="#6366f1" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <text x="25" y="100" class="card-title">Frontend Magic</text>
+    <text x="25" y="125" class="card-desc">Building pixel-perfect, fluid</text>
+    <text x="25" y="145" class="card-desc">interfaces &amp; micro-interactions.</text>
+    <text x="25" y="180" class="tag">⚡ REACT / NEXT / WEBGL</text>
+  </g>
+
+  <!-- Card 2: Architecture -->
+  <g class="card-group" transform="translate(307, 10)">
+    <rect x="0" y="0" width="285" height="200" class="card" />
+    <circle cx="40" cy="45" r="20" fill="rgba(236, 72, 153, 0.1)" />
+    <path d="M32 40 L40 35 L48 40 L48 50 L40 55 L32 50 Z" stroke="#ec4899" stroke-width="2" fill="none" />
+    <text x="25" y="100" class="card-title">Scalable Systems</text>
+    <text x="25" y="125" class="card-desc">Designing high-performance APIs</text>
+    <text x="25" y="145" class="card-desc">and distributed cloud backends.</text>
+    <text x="25" y="180" class="tag" fill="#ec4899">🚀 NODE / GO / DOCKER</text>
+  </g>
+
+  <!-- Card 3: Currently Vibing -->
+  <g class="card-group" transform="translate(614, 10)">
+    <rect x="0" y="0" width="285" height="200" class="card" />
+    <!-- Animated Equalizer -->
+    <rect x="28" y="25" width="5" height="25" class="bar bar-1" />
+    <rect x="37" y="25" width="5" height="25" class="bar bar-2" />
+    <rect x="46" y="25" width="5" height="25" class="bar bar-3" />
+    <rect x="55" y="25" width="5" height="25" class="bar bar-4" />
+    
+    <text x="25" y="100" class="card-title">Current Focus</text>
+    <text x="25" y="125" class="card-desc">Exploring AI Agents, shaders,</text>
+    <text x="25" y="145" class="card-desc">and spatial web design.</text>
+    <text x="25" y="180" class="tag" fill="#06b6d4">✨ OPEN SOURCE</text>
+  </g>
+</svg>
