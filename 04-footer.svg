@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1000 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .serif { font-family: 'Instrument Serif', 'Playfair Display', Georgia, 'Times New Roman', serif; font-style: italic; }
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; }
+
+      .bg { fill: #0b0b0a; }
+      .bone { fill: #f2efe9; }
+      .stone { fill: #8a857d; }
+      .muted { fill: #57534e; }
+      .accent { fill: #e04f33; }
+
+      .spin-seal {
+        transform-origin: 860px 105px;
+        animation: rotateSeal 20s linear infinite;
+      }
+      @keyframes rotateSeal {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="240" rx="12" class="bg" stroke="#242320" stroke-width="1" />
+
+  <g transform="translate(40, 46)">
+    <text x="0" y="0" class="mono accent" font-size="11" letter-spacing="2">04 / INITIATE DIALOGUE</text>
+    <text x="0" y="54" class="sans bone" font-size="44" font-weight="500" letter-spacing="-1.5">
+      Let’s build something <tspan class="serif accent" font-size="50">enduring.</tspan>
+    </text>
+    <text x="0" y="92" class="sans stone" font-size="14.5">
+      Currently available for select full-time roles, founding engineer positions, and advisory.
+    </text>
+    <text x="0" y="122" class="mono bone" font-size="13">→ [your.email@domain.com]</text>
+  </g>
+
+  <!-- Rotating Minimalist Stamp -->
+  <g class="spin-seal">
+    <circle cx="860" cy="105" r="52" fill="none" stroke="#292824" stroke-width="1" stroke-dasharray="3 3" />
+    <circle cx="860" cy="105" r="36" fill="none" stroke="#e04f33" stroke-width="1" opacity="0.5" />
+    <circle cx="860" cy="53" r="3.5" fill="#e04f33" />
+  </g>
+  <text x="860" y="109" text-anchor="middle" class="mono bone" font-size="9.5" letter-spacing="1">2026</text>
+
+  <!-- Bottom Colophon Bar -->
+  <line x1="0" y1="194" x2="1000" y2="194" stroke="#242320" />
+  <g transform="translate(40, 220)">
+    <text x="0" y="0" class="mono muted" font-size="10" letter-spacing="1">COLOPHON: SET IN INSTRUMENT SERIF, INTER &amp; JETBRAINS MONO</text>
+    <text x="920" y="0" text-anchor="end" class="mono stone" font-size="10" letter-spacing="1">© 2026 [YOUR NAME] — ALL RIGHTS RESERVED</text>
+  </g>
+</svg>
