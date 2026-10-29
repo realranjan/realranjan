@@ -1,0 +1,121 @@
+<svg viewBox="0 0 1000 540" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .serif { font-family: 'Instrument Serif', 'Playfair Display', Georgia, 'Times New Roman', serif; font-style: italic; }
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; }
+
+      .bg { fill: #0b0b0a; }
+      .card { fill: #121210; stroke: #242320; stroke-width: 1; }
+      .divider { stroke: #242320; stroke-width: 1; }
+
+      .bone { fill: #f2efe9; }
+      .stone { fill: #8a857d; }
+      .muted { fill: #57534e; }
+      .accent { fill: #e04f33; }
+
+      .active-node {
+        fill: #e04f33;
+        animation: pulseNode 2.5s ease-in-out infinite;
+      }
+      @keyframes pulseNode {
+        0%, 100% { r: 4.5px; opacity: 1; }
+        50% { r: 7px; opacity: 0.4; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect width="1000" height="540" rx="12" class="bg" stroke="#242320" stroke-width="1" />
+  <line x1="500" y1="0" x2="500" y2="540" class="divider" />
+
+  <!-- ==================== LEFT COLUMN: CAREER TIMELINE ==================== -->
+  <g transform="translate(36, 42)">
+    <text x="0" y="0" class="mono accent" font-size="11" letter-spacing="2">02 / EXPERIENCE &amp; TENURE</text>
+    
+    <!-- Timeline Vertical Line -->
+    <line x1="8" y1="36" x2="8" y2="375" stroke="#242320" stroke-width="1.5" />
+
+    <!-- Role 01 (Current) -->
+    <g transform="translate(0, 44)">
+      <circle cx="8" cy="-4" r="4.5" class="active-node" />
+      <circle cx="8" cy="-4" r="3" fill="#e04f33" />
+      <text x="28" y="0" class="mono accent" font-size="10.5" letter-spacing="1">[2024 — PRESENT]</text>
+      <text x="340" y="0" class="mono muted" font-size="10">[CITY / REMOTE]</text>
+      <text x="28" y="24" class="sans bone" font-size="17" font-weight="600">[Senior Software / Design Engineer] · [Company A]</text>
+      <text x="28" y="48" class="sans stone" font-size="12.5">[Placeholder: Spearheaded core frontend architecture and design</text>
+      <text x="28" y="66" class="sans stone" font-size="12.5">system primitives. Reduced p99 page load by 42% across 2M+ MAU.]</text>
+    </g>
+
+    <!-- Role 02 -->
+    <g transform="translate(0, 164)">
+      <circle cx="8" cy="-4" r="4" fill="#121210" stroke="#8a857d" stroke-width="1.5" />
+      <text x="28" y="0" class="mono stone" font-size="10.5" letter-spacing="1">[2022 — 2024]</text>
+      <text x="340" y="0" class="mono muted" font-size="10">[CITY / HYBRID]</text>
+      <text x="28" y="24" class="sans bone" font-size="17" font-weight="600">[Full-Stack Engineer] · [Company B]</text>
+      <text x="28" y="48" class="sans stone" font-size="12.5">[Placeholder: Built real-time collaborative canvas features, WebSocket</text>
+      <text x="28" y="66" class="sans stone" font-size="12.5">sync engines, and automated CI/CD deployment pipelines.]</text>
+    </g>
+
+    <!-- Role 03 -->
+    <g transform="translate(0, 284)">
+      <circle cx="8" cy="-4" r="4" fill="#121210" stroke="#57534e" stroke-width="1.5" />
+      <text x="28" y="0" class="mono stone" font-size="10.5" letter-spacing="1">[2020 — 2022]</text>
+      <text x="340" y="0" class="mono muted" font-size="10">[CITY]</text>
+      <text x="28" y="24" class="sans bone" font-size="17" font-weight="600">[Frontend Developer] · [Studio / Company C]</text>
+      <text x="28" y="48" class="sans stone" font-size="12.5">[Placeholder: Delivered bespoke interactive web experiences, custom</text>
+      <text x="28" y="66" class="sans stone" font-size="12.5">WebGL shaders, and high-converting product launches.]</text>
+    </g>
+
+    <!-- Education Footer Block -->
+    <g transform="translate(0, 396)">
+      <rect width="428" height="72" rx="8" class="card" />
+      <text x="18" y="26" class="mono muted" font-size="10" letter-spacing="1">EDUCATION &amp; HONORS</text>
+      <text x="18" y="48" class="sans bone" font-size="14" font-weight="500">[B.S. in Computer Science — University Name]</text>
+      <text x="345" y="48" class="serif stone" font-size="16">[2016–2020]</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT COLUMN: TECHNICAL CAPABILITIES ==================== -->
+  <g transform="translate(536, 42)">
+    <text x="0" y="0" class="mono accent" font-size="11" letter-spacing="2">03 / TECHNICAL ARCHITECTURE &amp; CRAFT</text>
+
+    <!-- Domain 1 -->
+    <g transform="translate(0, 32)">
+      <rect width="428" height="92" rx="8" class="card" />
+      <text x="20" y="26" class="mono bone" font-size="11" font-weight="500">01 // INTERFACE &amp; MOTION ENGINEERING</text>
+      <text x="345" y="26" class="mono accent" font-size="10">PRIMARY</text>
+      <text x="20" y="50" class="sans stone" font-size="12.5">TypeScript, React 19, Next.js, Tailwind CSS, WebGL / Three.js,</text>
+      <text x="20" y="68" class="sans stone" font-size="12.5">SVG SMIL Physics, Framer Motion, HTML5 Canvas, WCAG Accessibility</text>
+    </g>
+
+    <!-- Domain 2 -->
+    <g transform="translate(0, 138)">
+      <rect width="428" height="92" rx="8" class="card" />
+      <text x="20" y="26" class="mono bone" font-size="11" font-weight="500">02 // BACKEND &amp; DISTRIBUTED SYSTEMS</text>
+      <text x="345" y="26" class="mono stone" font-size="10">PRODUCTION</text>
+      <text x="20" y="50" class="sans stone" font-size="12.5">Node.js, Go, Rust, Python, PostgreSQL, Redis, ClickHouse,</text>
+      <text x="20" y="68" class="sans stone" font-size="12.5">GraphQL, gRPC, WebSockets, Event-Driven Microservices</text>
+    </g>
+
+    <!-- Domain 3 -->
+    <g transform="translate(0, 244)">
+      <rect width="428" height="92" rx="8" class="card" />
+      <text x="20" y="26" class="mono bone" font-size="11" font-weight="500">03 // CLOUD, INFRASTRUCTURE &amp; TOOLING</text>
+      <text x="345" y="26" class="mono stone" font-size="10">DEVOPS</text>
+      <text x="20" y="50" class="sans stone" font-size="12.5">Docker, Kubernetes, AWS, Vercel, Cloudflare Workers, Linux,</text>
+      <text x="20" y="68" class="sans stone" font-size="12.5">GitHub Actions CI/CD, Turborepo, Vite, AST Compilers</text>
+    </g>
+
+    <!-- Domain 4: Engineering Principles -->
+    <g transform="translate(0, 350)">
+      <rect width="428" height="118" rx="8" fill="#141311" stroke="#292723" />
+      <text x="20" y="28" class="mono accent" font-size="10.5" letter-spacing="1.5">WORKING PRINCIPLES</text>
+      <text x="20" y="54" class="serif bone" font-size="22">“Speed is a feature. Simplicity is a prerequisite</text>
+      <text x="20" y="78" class="serif bone" font-size="22">for reliability.”</text>
+      <text x="20" y="102" class="mono muted" font-size="10">— ZERO BLOAT · DETERMINISTIC BUILDS · PIXEL PRECISION</text>
+    </g>
+  </g>
+</svg>
