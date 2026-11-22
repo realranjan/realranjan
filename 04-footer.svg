@@ -34,7 +34,7 @@
     <text x="0" y="92" class="sans stone" font-size="14.5">
       Currently available for select full-time roles, founding engineer positions, and advisory.
     </text>
-    <text x="0" y="122" class="mono bone" font-size="13">→ [your.email@domain.com]</text>
+    <text x="0" y="122" class="mono bone" font-size="13">→ [ranjanvernekar45@gmail.com]</text>
   </g>
 
   <!-- Rotating Minimalist Stamp -->
@@ -49,6 +49,6 @@
   <line x1="0" y1="194" x2="1000" y2="194" stroke="#242320" />
   <g transform="translate(40, 220)">
     <text x="0" y="0" class="mono muted" font-size="10" letter-spacing="1">COLOPHON: SET IN INSTRUMENT SERIF, INTER &amp; JETBRAINS MONO</text>
-    <text x="920" y="0" text-anchor="end" class="mono stone" font-size="10" letter-spacing="1">© 2026 [YOUR NAME] — ALL RIGHTS RESERVED</text>
+    <text x="920" y="0" text-anchor="end" class="mono stone" font-size="10" letter-spacing="1">© 2026 realranjan — ALL RIGHTS RESERVED</text>
   </g>
 </svg>
